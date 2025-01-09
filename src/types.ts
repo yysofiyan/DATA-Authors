@@ -16,4 +16,5 @@ export interface SintaProfile {
   affilScore: number;
   affilScore3Yr: number;
   publications: Publication[];
+  photoUrl?: string; // Optional photo URL
 }
