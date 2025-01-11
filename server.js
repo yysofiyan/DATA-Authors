@@ -19,16 +19,39 @@ const authors = [
       "Web Based Application",
       "Software Developer"
     ],
-    sintaScoreOverall: 229,
+    sintaScoreOverall: 224,
     sintaScore3Yr: 79,
     affilScore: 0,
     affilScore3Yr: 0,
+    institutionLocation: "KAB. SUMEDANG - JAWA BARAT, ID",
+    codePT: "041097",
+    codeProdi: "57201",
+    scopusMetrics: {
+      articles: 5,
+      citations: 22,
+      hIndex: 3,
+      i10Index: 1,
+      gIndex: 2,
+      citedDocs: 4
+    },
+    gsMetrics: {
+      articles: 28,
+      citations: 126,
+      hIndex: 7,
+      i10Index: 5,
+      gIndex: 1,
+      citedDocs: 12
+    },
     publications: [
       {
         title: "Waste Classifier using Naive Bayes Algorithm",
+        url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992",
+        type: "no-Q as Conference Proceedin",
         journal_conference: "2022 10th International Conference on Cyber and IT Service Management, CITSM 2022",
+        authorOrder: "5 of 6 of 0",
+        creator: "Fadil I.",
         year: 2022,
-        cited: 3
+        cited: 2
       },
       {
         title: "Microservices Technology on the Development of the Massive Open Online Course in Higher Educations",
