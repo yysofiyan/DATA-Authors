@@ -10,22 +10,23 @@ app.use(express.json());
 // Contoh data penulis
 const authors = [
   {
+    sintaID: "6655767",
     name: "YAN YAN SOFIYAN",
+    photoUrl: "https://scholar.google.co.id/citations?view_op=view_photo&user=OX1ogLQAAAAJ&citpid=1",
     affiliation: "Universitas Sebelas April",
     studyProgram: "S1 - Sistem Informasi",
-    sintaID: "6655767",
-    subjects: [
-      "Information Systems",
-      "Web Based Application",
-      "Software Developer"
-    ],
+    institutionName: "Universitas Sebelas April",
+    institutionLocation: "KAB. SUMEDANG - JAWA BARAT, ID",
+    codePT: "041097",
+    codeProdi: "57201",
+    
+    // Metrics
     sintaScoreOverall: 224,
     sintaScore3Yr: 79,
     affilScore: 0,
     affilScore3Yr: 0,
-    institutionLocation: "KAB. SUMEDANG - JAWA BARAT, ID",
-    codePT: "041097",
-    codeProdi: "57201",
+    
+    // Scopus metrics
     scopusMetrics: {
       articles: 5,
       citations: 22,
@@ -34,6 +35,8 @@ const authors = [
       gIndex: 2,
       citedDocs: 4
     },
+    
+    // Google Scholar metrics
     gsMetrics: {
       articles: 28,
       citations: 126,
@@ -42,6 +45,18 @@ const authors = [
       gIndex: 1,
       citedDocs: 12
     },
+    
+    // Web of Science metrics
+    wosMetrics: {
+      articles: 0,
+      citations: 0,
+      citedDocs: 0,
+      hIndex: "-",
+      i10Index: "-",
+      gIndex: "-"
+    },
+    
+    // Publications array
     publications: [
       {
         title: "Waste Classifier using Naive Bayes Algorithm",
@@ -71,8 +86,7 @@ const authors = [
         year: 2021,
         cited: 6
       }
-    ],
-    photoUrl: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=OX1ogLQAAAAJ&citpid=1"
+    ]
   },
   // Tambahkan penulis lain sesuai kebutuhan
 ];
