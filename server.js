@@ -80,7 +80,11 @@ const authors = [
       },
       {
         title: "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+        url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+        type: "no-Q as Conference Procedin",
         journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
+        AuthorOrder: "3 of 4",
+        Creator: "Helmiawan M.A.",
         year: 2021,
         cited: 2
       },
