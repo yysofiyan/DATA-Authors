@@ -1,17 +1,15 @@
 import { ReactNode } from "react";
 
-export interface Publication {
-  journal_conference: ReactNode;
-  cited: ReactNode;
+export type Publication = {
   title: string;
   url?: string;
   type?: string;
-  publication: string; // Changed from journal_conference
+  journal_conference?: string;
   authorOrder?: string;
   creator?: string;
-  year: string; // Changed from number
-  citations: string; // Changed from cited number
-}
+  year?: number;
+  cited?: number;
+};
 
 export interface SintaProfile {
   affilScore3Yr: ReactNode;

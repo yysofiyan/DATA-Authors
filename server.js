@@ -70,7 +70,11 @@ const authors = [
       },
       {
         title: "Microservices Technology on the Development of the Massive Open Online Course in Higher Educations",
+        url: "https://www.scopus.com/authid/detail.uri?authorId=57421449500",
+        type: "no-Q as Conference Proceedin",
         journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
+        AuthorOrder: "1 of 3",
+        Creator: "Sofiyan Y.",
         year: 2021,
         cited: 0
       },

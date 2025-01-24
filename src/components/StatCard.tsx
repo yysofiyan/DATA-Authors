@@ -15,7 +15,12 @@ export function StatCard({
   description, 
   icon, 
   theme = 'default',
-  formatter = (val) => val.toLocaleString()
+  formatter = (val) => {
+    // Handle undefined/null values
+    if (val === null || val === undefined) return 'N/A';
+    // Handle both string and number values
+    return typeof val === 'number' ? val.toLocaleString() : val.toString();
+  }
 }: StatCardProps) {
   const themeStyles = {
     default: 'text-indigo-600',

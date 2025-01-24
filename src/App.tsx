@@ -1,6 +1,6 @@
 // Impor modul dan komponen yang diperlukan
 import { useState, useEffect } from 'react';
-import { BookOpen, Award, ArrowLeft, Hash, Building2 } from 'lucide-react';
+import { Award, ArrowLeft, Hash, Building2 } from 'lucide-react';
 import { StatCard } from './components/StatCard';
 import { PublicationCard } from './components/PublicationCard';
 import { AuthorCard } from './components/AuthorCard';
@@ -40,6 +40,7 @@ function App() {
 
   // Render tampilan detail jika ada penulis yang dipilih
   if (selectedAuthor) {
+    console.log('Selected Author Publications:', selectedAuthor?.publications);
     return (
       <div className="min-h-screen bg-gray-50">
         {/* Header dengan gradient dan tombol kembali */}
@@ -77,11 +78,9 @@ function App() {
                 theme="success"
               />
               <StatCard
-                title="Publications"
-                value={selectedAuthor.scopusMetrics.articles}
-                description="Total Publications"
-                icon={<BookOpen />}
-                theme="warning"
+                title="Total Publications"
+                value={selectedAuthor?.publications?.length || 0}
+                description="Total number of publications"
               />
             </div>
           </div>
@@ -89,11 +88,17 @@ function App() {
 
         {/* Main content untuk menampilkan publikasi penulis */}
         <main className="container mx-auto px-4 py-8">
-          <div className="space-y-6">
-            {selectedAuthor.publications.map((publication, index) => (
-              <PublicationCard key={index} publication={publication} />
-            ))}
-          </div>
+          {selectedAuthor.publications.length > 0 ? (
+            <div className="space-y-6">
+              {selectedAuthor.publications.map((publication, index) => (
+                <PublicationCard key={index} publication={publication} />
+              ))}
+            </div>
+          ) : (
+            <div className="text-center text-gray-600 py-8">
+              No publications found for this author.
+            </div>
+          )}
         </main>
       </div>
     );

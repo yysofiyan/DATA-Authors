@@ -14,19 +14,28 @@ export function PublicationCard({ publication }: PublicationCardProps) {
       </h3>
       
       <div className="space-y-2 text-gray-600">
-        <p className="text-sm">{publication.journal_conference}</p>
+        {publication.type && (
+          <p className="text-sm text-gray-500">Type: {publication.type}</p>
+        )}
+        {publication.journal_conference && (
+          <p className="text-sm">{publication.journal_conference}</p>
+        )}
         {publication.creator && (
           <p className="text-sm text-indigo-600">Author: {publication.creator}</p>
         )}
         <div className="flex flex-wrap items-center gap-6">
-          <div className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            <span>{publication.year}</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Quote className="w-4 h-4" />
-            <span>{publication.cited} citations</span>
-          </div>
+          {publication.year && (
+            <div className="flex items-center gap-1">
+              <Calendar className="w-4 h-4" />
+              <span>{publication.year}</span>
+            </div>
+          )}
+          {publication.cited && (
+            <div className="flex items-center gap-1">
+              <Quote className="w-4 h-4" />
+              <span>{publication.cited} citations</span>
+            </div>
+          )}
           {publication.url && (
             <a 
               href={publication.url}
