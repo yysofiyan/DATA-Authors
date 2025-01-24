@@ -14,6 +14,8 @@ function App() {
   const [selectedAuthor, setSelectedAuthor] = useState<SintaProfile | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(5); // Jumlah publikasi per halaman
 
   // Effect untuk mengambil data penulis saat komponen pertama kali di-mount
   useEffect(() => {
@@ -31,6 +33,20 @@ function App() {
 
     getAuthors();
   }, []);
+
+  // Hitung total halaman
+  const totalPages = Math.ceil(selectedAuthor?.publications?.length || 0 / itemsPerPage);
+
+  // Ambil data publikasi untuk halaman saat ini
+  const currentPublications = selectedAuthor?.publications.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
+
+  // Fungsi untuk mengubah halaman
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   // Tampilkan loading state jika data sedang dimuat
   if (loading) return <div className="p-8 text-center">Loading...</div>;
@@ -58,8 +74,8 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
               <StatCard
                 title="SINTA Score"
-                value={selectedAuthor.sintaScore}
-                description="Overall SINTA Score"
+                value={selectedAuthor.sintaScoreOverall ? Number(selectedAuthor.sintaScoreOverall) : 0}
+                description="SINTA Score Overall"
                 icon={<Award />}
                 theme="success"
               />
@@ -88,9 +104,9 @@ function App() {
 
         {/* Main content untuk menampilkan publikasi penulis */}
         <main className="container mx-auto px-4 py-8">
-          {selectedAuthor.publications.length > 0 ? (
+          {currentPublications && currentPublications.length > 0 ? (
             <div className="space-y-6">
-              {selectedAuthor.publications.map((publication, index) => (
+              {currentPublications.map((publication, index) => (
                 <PublicationCard key={index} publication={publication} />
               ))}
             </div>
@@ -99,6 +115,23 @@ function App() {
               No publications found for this author.
             </div>
           )}
+
+          {/* Tambahkan komponen pagination */}
+          <div className="flex justify-center mt-6">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`mx-1 px-3 py-1 rounded ${
+                  currentPage === page
+                    ? 'bg-indigo-600 text-white'
+                    : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+          </div>
         </main>
       </div>
     );

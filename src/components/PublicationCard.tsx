@@ -21,8 +21,14 @@ export function PublicationCard({ publication }: PublicationCardProps) {
           <p className="text-sm">{publication.journal_conference}</p>
         )}
         {publication.creator && (
-          <p className="text-sm text-indigo-600">Author: {publication.creator}</p>
+          <div className="flex items-center gap-2">
+            <p className="text-sm text-indigo-600">Author: {publication.creator}</p>
+            {publication.authorOrder && (
+              <p className="text-sm text-gray-500">Author Order: ({publication.authorOrder})</p>
+            )}
+          </div>
         )}
+        
         <div className="flex flex-wrap items-center gap-6">
           {publication.year && (
             <div className="flex items-center gap-1">

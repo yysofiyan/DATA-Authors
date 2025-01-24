@@ -63,18 +63,18 @@ const authors = [
         url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992",
         type: "no-Q as Conference Proceedin",
         journal_conference: "2022 10th International Conference on Cyber and IT Service Management, CITSM 2022",
-        authorOrder: "5 of 6 of 0",
-        creator: "Fadil I.",
+        authorOrder: "5 of 6", // Diubah dari AuthorOrder
+        creator: "Fadil I.", // Diubah dari Creator
         year: 2022,
-        cited: 2
+        cited: 4
       },
       {
         title: "Microservices Technology on the Development of the Massive Open Online Course in Higher Educations",
         url: "https://www.scopus.com/authid/detail.uri?authorId=57421449500",
         type: "no-Q as Conference Proceedin",
         journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
-        AuthorOrder: "1 of 3",
-        Creator: "Sofiyan Y.",
+        authorOrder: "1 of 3",
+        creator: "Sofiyan Y.",
         year: 2021,
         cited: 0
       },
@@ -83,8 +83,8 @@ const authors = [
         url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
         type: "no-Q as Conference Procedin",
         journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
-        AuthorOrder: "3 of 4",
-        Creator: "Helmiawan M.A.",
+        authorOrder: "3 of 4",
+        creator: "Helmiawan M.A.",
         year: 2021,
         cited: 2
       },
