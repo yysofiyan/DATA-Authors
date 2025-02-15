@@ -63,6 +63,7 @@ export default {
   },
 
   async _navigateWithRetry(page, url, options, retries = 3) {
+    if (!page) throw new Error('Halaman browser tidak terinisialisasi');
     try {
       await page.goto(url, {
         waitUntil: 'networkidle',

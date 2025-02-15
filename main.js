@@ -5,7 +5,8 @@ async function main() {
   try {
     const profile = await sintaScraper.getAuthorProfile('6655767', {
       debug: true,
-      headless: false
+      headless: true,
+      forceRefresh: true
     });
     
     console.log('Data Profil:', {
