@@ -18,7 +18,10 @@ export default {
     try {
       browser = await chromium.launch({ 
         headless: options.headless ?? true,
-        slowMo: options.debug ? 100 : 50
+        slowMo: options.debug ? 100 : 50,
+        proxy: {
+          server: '1159.89.239.166:18098'
+        }
       });
       
       const context = await browser.newContext({
@@ -31,6 +34,12 @@ export default {
       
       // Navigasi dengan retry mechanism
       await this._navigateWithRetry(page, `https://sinta.kemdikbud.go.id/authors/profile/${sintaId}`, options);
+
+      // Verifikasi halaman valid
+      const pageTitle = await page.title();
+      if (pageTitle.includes('Error') || pageTitle.includes('Not Found')) {
+        throw new Error('Halaman tidak ditemukan');
+      }
 
       // Ambil data utama
       const profile = await this._scrapeProfileData(page, options);
@@ -64,114 +73,86 @@ export default {
 
   async _navigateWithRetry(page, url, options, retries = 3) {
     if (!page) throw new Error('Halaman browser tidak terinisialisasi');
+    
     try {
       await page.goto(url, {
-        waitUntil: 'networkidle',
+        waitUntil: 'domcontentloaded',
         timeout: 60000
       });
       
-      await page.waitForTimeout(1000 + Math.random() * 2000);
+      // Tunggu kombinasi beberapa elemen
+      await Promise.race([
+        page.waitForSelector('.author-profile', { timeout: 45000 }),
+        page.waitForSelector('h3.author-name', { timeout: 45000 }),
+        page.waitForSelector('.affil-name', { timeout: 45000 })
+      ]);
       
-      await page.waitForSelector('.author-profile', { 
-        timeout: 30000,
-        state: 'attached'
-      });
     } catch (error) {
       if (retries > 0) {
-        if (options.debug) console.log(`Retry navigasi (${retries} tersisa)...`);
+        await page.waitForTimeout(5000);
         return this._navigateWithRetry(page, url, options, retries - 1);
       }
-      throw new Error(`Gagal navigasi setelah ${retries} retry: ${error.message}`);
+      throw error;
     }
   },
 
   async _scrapeProfileData(page, options) {
-    const safeEvaluate = async (selector, callback) => {
-      let retries = 3;
-      while (retries > 0) {
-        try {
-          return await page.$eval(selector, callback);
-        } catch (error) {
-          if (options.debug) console.log(`Retry selector ${selector}...`);
-          await page.waitForTimeout(1000);
-          retries--;
-        }
-      }
-      throw new Error(`Selector ${selector} tidak ditemukan`);
-    };
-
     const profile = {
-      nama: await safeEvaluate('h3 a', el => el.textContent.trim()),
-      afiliasi: await safeEvaluate('.meta-profile a:first-child', el => el.textContent.trim()),
-      program_studi: await safeEvaluate('.meta-profile a:nth-child(3)', el => el.textContent.trim()),
-      sinta_id: await safeEvaluate('.meta-profile a:last-child', el => 
+      nama: await this._safeEvaluate(page, 'h3 a', el => el.textContent.trim()),
+      afiliasi: await this._safeEvaluate(page, '.meta-profile a:first-child', el => el.textContent.trim()),
+      program_studi: await this._safeEvaluate(page, '.meta-profile a:nth-child(3)', el => el.textContent.trim()),
+      sinta_id: await this._safeEvaluate(page, '.meta-profile a:last-child', el => 
         el.textContent.trim().split(': ')[1]
       ),
-      bidang_keahlian: await safeEvaluate('.subject-list li a', 
+      bidang_keahlian: await this._safeEvaluate(page, '.subject-list li a', 
         elements => elements.map(el => el.textContent.trim())
       ),
       skor: {
-        sinta_total: parseInt(await safeEvaluate('.stat-profile .pr-num:nth-child(1)', el => el.textContent)),
-        sinta_3tahun: parseInt(await safeEvaluate('.stat-profile .pr-num:nth-child(2)', el => el.textContent)),
-        afiliasi_total: parseInt(await safeEvaluate('.stat-profile .pr-num:nth-child(3)', el => el.textContent)),
-        afiliasi_3tahun: parseInt(await safeEvaluate('.stat-profile .pr-num:nth-child(4)', el => el.textContent))
+        sinta_total: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(1)', el => el.textContent)),
+        sinta_3tahun: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(2)', el => el.textContent)),
+        afiliasi_total: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(3)', el => el.textContent)),
+        afiliasi_3tahun: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(4)', el => el.textContent))
       },
-      penelitian: []
+      publikasi: await this._scrapePublications(page, options)
     };
-
-    // Scraping data penelitian (tambahkan jika diperlukan)
-    const researchItems = await page.$$('.research-item');
-    for (const item of researchItems) {
-      profile.penelitian.push({
-        judul: await item.$eval('.research-title', el => el.textContent.trim()),
-        tahun: await item.$eval('.research-year', el => el.textContent.trim()),
-        pendanaan: await item.$eval('.research-funding', el => el.textContent.trim())
-      });
-    }
-
     return profile;
   },
 
   async _scrapePublications(page, options) {
     const publications = [];
-    let pageNumber = 1;
+    const items = await page.$$('.ar-list-item');
     
-    do {
-      await page.evaluate(() => {
-        window.scrollBy(0, window.innerHeight * 0.7);
+    for (const item of items) {
+      publications.push({
+        judul: await item.$eval('.ar-title a', el => el.textContent.trim()),
+        link: await item.$eval('.ar-title a', el => el.href),
+        tahun: parseInt(await item.$eval('.ar-year', el => 
+          el.textContent.trim().match(/\d+/)[0]
+        )),
+        sitasi: parseInt(await item.$eval('.ar-cited', el => 
+          el.textContent.trim().match(/\d+/)?.[0] || 0
+        )),
+        jurnal: await item.$eval('.ar-pub', el => el.textContent.trim())
       });
-      
-      await page.waitForSelector('.ar-list-item', {
-        timeout: pageNumber === 1 ? 30000 : 10000
-      });
-
-      const items = await page.$$('.ar-list-item');
-      for (const item of items) {
-        publications.push({
-          judul: await item.$eval('.ar-title a', el => el.textContent.trim()),
-          link: await item.$eval('.ar-title a', el => el.href),
-          tahun: parseInt(await item.$eval('.ar-year', el => 
-            el.textContent.trim().replace(/[^0-9]/g, '')
-          )),
-          sitasi: parseInt(await item.$eval('.ar-cited', el => 
-            el.textContent.trim().replace(/[^0-9]/g, '')
-          )) || 0,
-          jurnal: await item.$eval('.ar-pub', el => el.textContent.trim())
-        });
-      }
-
-      const nextButton = await page.$('.pagination-next:not(.disabled)');
-      if (!nextButton) break;
-      
-      await Promise.all([
-        page.waitForNavigation(),
-        nextButton.click()
-      ]);
-      await page.waitForTimeout(2000 + Math.random() * 3000);
-      pageNumber++;
-    } while (pageNumber <= 10);
-
+    }
+    
     return publications;
+  },
+
+  async _safeEvaluate(page, selector, callback, retries = 3) {
+    while (retries > 0) {
+      try {
+        if (typeof callback === 'function') {
+          return await page.$eval(selector, callback);
+        }
+        return await page.$eval(selector, el => el.textContent.trim());
+      } catch (error) {
+        if (options.debug) console.log(`Retry selector ${selector}...`);
+        await page.waitForTimeout(1000);
+        retries--;
+      }
+    }
+    throw new Error(`Selector ${selector} tidak ditemukan`);
   },
 
   _updateCache(sintaId, data) {
@@ -186,9 +167,14 @@ export default {
     
     if (page) {
       try {
-        await page.screenshot({ path: `error-${Date.now()}.png` });
+        const timestamp = Date.now();
+        await page.screenshot({ path: `error-${timestamp}.png` });
         const html = await page.content();
-        await Bun.write(`error-${Date.now()}.html`, html);
+        
+        // Ganti Bun.write dengan fs
+        const fs = await import('fs');
+        fs.writeFileSync(`error-${timestamp}.html`, html);
+        
       } catch (e) {
         console.error('Gagal menyimpan debug info:', e.message);
       }
