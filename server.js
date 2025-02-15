@@ -19,13 +19,13 @@ const authors = [
     institutionLocation: "KAB. SUMEDANG - JAWA BARAT, ID",
     codePT: "041097",
     codeProdi: "57201",
-    
+
     // Metrics
     sintaScoreOverall: 224,
     sintaScore3Yr: 79,
     affilScore: 0,
     affilScore3Yr: 0,
-    
+
     // Scopus metrics
     scopusMetrics: {
       articles: 5,
@@ -35,7 +35,7 @@ const authors = [
       gIndex: 2,
       citedDocs: 4
     },
-    
+
     // Google Scholar metrics
     gsMetrics: {
       articles: 28,
@@ -45,7 +45,7 @@ const authors = [
       gIndex: 1,
       citedDocs: 12
     },
-    
+
     // Web of Science metrics
     wosMetrics: {
       articles: 0,
@@ -55,7 +55,7 @@ const authors = [
       i10Index: "-",
       gIndex: "-"
     },
-    
+
     // Publications array
     publications: [
       {

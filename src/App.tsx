@@ -6,6 +6,7 @@ import { PublicationCard } from './components/PublicationCard';
 import { AuthorCard } from './components/AuthorCard';
 import type { SintaProfile } from './types';
 import { fetchAuthors } from './api/authors';
+import { MetricsTable } from './components/MetricsTable';
 
 // Komponen utama aplikasi
 function App() {
@@ -50,7 +51,7 @@ function App() {
 
   // Tampilkan loading state jika data sedang dimuat
   if (loading) return <div className="p-8 text-center">Loading...</div>;
-  
+
   // Tampilkan error message jika terjadi kesalahan
   if (error) return <div className="p-8 text-center text-red-600">{error}</div>;
 
@@ -104,6 +105,26 @@ function App() {
 
         {/* Main content untuk menampilkan publikasi penulis */}
         <main className="container mx-auto px-4 py-8">
+          {/* Tambahkan tabel metrik */}
+          <MetricsTable
+            scopusMetrics={{
+              articles: Number(selectedAuthor?.scopusMetrics?.articles),
+              citations: Number(selectedAuthor?.scopusMetrics?.citations),
+              citedDocs: Number(selectedAuthor?.scopusMetrics?.citedDocs),
+              hIndex: Number(selectedAuthor?.scopusMetrics?.hIndex),
+              i10Index: Number(selectedAuthor?.scopusMetrics?.i10Index),
+              gIndex: Number(selectedAuthor?.scopusMetrics?.gIndex)
+            }}
+            gsMetrics={{
+              articles: Number(selectedAuthor?.gsMetrics?.articles),
+              citations: Number(selectedAuthor?.gsMetrics?.citations),
+              citedDocs: Number(selectedAuthor?.gsMetrics?.citedDocs),
+              hIndex: Number(selectedAuthor?.gsMetrics?.hIndex),
+              i10Index: Number(selectedAuthor?.gsMetrics?.i10Index),
+              gIndex: Number(selectedAuthor?.gsMetrics?.gIndex)
+            }}
+          />
+
           {currentPublications && currentPublications.length > 0 ? (
             <div className="space-y-6">
               {currentPublications.map((publication, index) => (
@@ -122,11 +143,10 @@ function App() {
               <button
                 key={page}
                 onClick={() => handlePageChange(page)}
-                className={`mx-1 px-3 py-1 rounded ${
-                  currentPage === page
+                className={`mx-1 px-3 py-1 rounded ${currentPage === page
                     ? 'bg-indigo-600 text-white'
                     : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
-                }`}
+                  }`}
               >
                 {page}
               </button>
