@@ -4,6 +4,7 @@ import { writeFileSync } from 'fs';
 
 async function main() {
   try {
+    // Mulai scraping
     const profile = await sintaScraper.getAuthorProfile('6655767', {
       headless: false,
       debug: true,
