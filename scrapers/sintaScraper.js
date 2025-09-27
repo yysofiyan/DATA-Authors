@@ -16,17 +16,21 @@ export default {
     let page;
     
     try {
-      browser = await chromium.launch({ 
-        headless: options.headless ?? true,
-        slowMo: options.debug ? 100 : 50,
-        proxy: {
-          server: '1159.89.239.166:18098'
-        }
+      browser = await chromium.launch({
+        headless: false,
+        args: [
+          '--disable-blink-features=AutomationControlled',
+          '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+        ]
       });
       
       const context = await browser.newContext({
-        userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0',
-        viewport: { width: 1280, height: 720 }
+        userAgent: 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
+        viewport: { width: 1280, height: 720 },
+        extraHTTPHeaders: {
+          'Accept-Language': 'id-ID,id;q=0.9',
+          'Referer': 'https://sinta.kemdikbud.go.id/'
+        }
       });
 
       page = await context.newPage();
@@ -72,24 +76,24 @@ export default {
   },
 
   async _navigateWithRetry(page, url, options, retries = 3) {
-    if (!page) throw new Error('Halaman browser tidak terinisialisasi');
-    
     try {
       await page.goto(url, {
-        waitUntil: 'domcontentloaded',
+        waitUntil: 'networkidle2',
         timeout: 60000
       });
       
-      // Tunggu kombinasi beberapa elemen
-      await Promise.race([
-        page.waitForSelector('.author-profile', { timeout: 45000 }),
-        page.waitForSelector('h3.author-name', { timeout: 45000 }),
-        page.waitForSelector('.affil-name', { timeout: 45000 })
-      ]);
+      // Tambahkan delay untuk render JS
+      await new Promise(resolve => setTimeout(resolve, 3000));
       
+      await Promise.all([
+        page.waitForSelector('h3 a', { visible: true }),
+        page.waitForSelector('.meta-profile a', { visible: true }),
+        page.waitForSelector('.stat-profile .pr-num', { visible: true })
+      ]);
+
     } catch (error) {
       if (retries > 0) {
-        await page.waitForTimeout(5000);
+        await new Promise(resolve => setTimeout(resolve, 5000));
         return this._navigateWithRetry(page, url, options, retries - 1);
       }
       throw error;
@@ -97,24 +101,111 @@ export default {
   },
 
   async _scrapeProfileData(page, options) {
+    // Tunggu semua elemen kritis
+    await Promise.all([
+      page.waitForSelector('h3 a', { timeout: 45000 }),
+      page.waitForSelector('.meta-profile a', { timeout: 45000 }),
+      page.waitForSelector('.subject-list li a', { timeout: 45000 }),
+      page.waitForSelector('.stat-profile .pr-num', { timeout: 45000 }),
+      page.waitForSelector('.ar-list-item', { timeout: 45000 })
+    ]);
+
     const profile = {
-      nama: await this._safeEvaluate(page, 'h3 a', el => el.textContent.trim()),
-      afiliasi: await this._safeEvaluate(page, '.meta-profile a:first-child', el => el.textContent.trim()),
-      program_studi: await this._safeEvaluate(page, '.meta-profile a:nth-child(3)', el => el.textContent.trim()),
-      sinta_id: await this._safeEvaluate(page, '.meta-profile a:last-child', el => 
-        el.textContent.trim().split(': ')[1]
+      nama: await this._safeEvaluate(page, 'h3 a', el => {
+        return el.textContent.replace(/\s+/g, ' ').trim();
+      }, options, 'Nama tidak ditemukan'),
+      
+      afiliasi: await this._safeEvaluate(page, '.meta-profile a:first-child', el => {
+        return el.textContent.replace(/Universitas/g, '').trim();
+      }, options, 'Afiliasi tidak ditemukan'),
+      
+      program_studi: await this._safeEvaluate(page, '.meta-profile a:nth-child(3)', el => {
+        return el.textContent.replace('S1 - ', '').trim();
+      }, options, 'Program studi tidak ditemukan'),
+      
+      sinta_id: await this._safeEvaluate(page, '.meta-profile a:last-child', el => {
+        const text = el.textContent.replace(/\s+/g, ' ');
+        return text.split(': ')[1]?.trim() || 'ID tidak valid';
+      }, options, 'ID tidak ditemukan'),
+      
+      bidang_keahlian: await this._safeEvaluate(
+        page,
+        '.subject-list li a',
+        elements => elements.map(el => el.textContent.trim()),
+        options,
+        []
       ),
-      bidang_keahlian: await this._safeEvaluate(page, '.subject-list li a', 
-        elements => elements.map(el => el.textContent.trim())
-      ),
+      
       skor: {
-        sinta_total: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(1)', el => el.textContent)),
-        sinta_3tahun: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(2)', el => el.textContent)),
-        afiliasi_total: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(3)', el => el.textContent)),
-        afiliasi_3tahun: parseInt(await this._safeEvaluate(page, '.stat-profile .pr-num:nth-child(4)', el => el.textContent))
+        sinta_total: parseInt(await this._safeEvaluate(
+          page, 
+          '.stat-profile > .row > div:nth-child(2) .pr-num',
+          el => el.textContent,
+          options,
+          0
+        )),
+        sinta_3tahun: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-profile > .row > div:nth-child(3) .pr-num',
+          el => el.textContent,
+          options,
+          0
+        )),
+        afiliasi_total: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-profile > .row > div:nth-child(4) .pr-num',
+          el => el.textContent,
+          options,
+          0
+        )),
+        afiliasi_3tahun: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-profile > .row > div:nth-child(5) .pr-num',
+          el => el.textContent,
+          options,
+          0
+        ))
       },
+      
+      statistik: {
+        h_index_scopus: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-table tbody tr:nth-child(4) td:nth-child(2)',
+          el => el.textContent,
+          options,
+          0
+        )),
+        i10_index_scopus: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-table tbody tr:nth-child(5) td:nth-child(2)',
+          el => el.textContent,
+          options,
+          0
+        )),
+        h_index_scholar: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-table tbody tr:nth-child(4) td:nth-child(3)',
+          el => el.textContent,
+          options,
+          0
+        )),
+        i10_index_scholar: parseInt(await this._safeEvaluate(
+          page,
+          '.stat-table tbody tr:nth-child(5) td:nth-child(3)',
+          el => el.textContent,
+          options,
+          0
+        ))
+      },
+      
       publikasi: await this._scrapePublications(page, options)
     };
+    
+    // Validasi data penting
+    if(!profile.nama || !profile.sinta_id) {
+      throw new Error('Data profil penting tidak ditemukan');
+    }
+    
     return profile;
   },
 
@@ -123,36 +214,40 @@ export default {
     const items = await page.$$('.ar-list-item');
     
     for (const item of items) {
+      const tahunText = await item.$eval('.ar-year', el => el.textContent);
+      const sitasiText = await item.$eval('.ar-cited', el => el.textContent);
+      
       publications.push({
-        judul: await item.$eval('.ar-title a', el => el.textContent.trim()),
-        link: await item.$eval('.ar-title a', el => el.href),
-        tahun: parseInt(await item.$eval('.ar-year', el => 
-          el.textContent.trim().match(/\d+/)[0]
-        )),
-        sitasi: parseInt(await item.$eval('.ar-cited', el => 
-          el.textContent.trim().match(/\d+/)?.[0] || 0
-        )),
-        jurnal: await item.$eval('.ar-pub', el => el.textContent.trim())
+        judul: await this._safeEvaluate(item, '.ar-title a', el => el.textContent.trim(), options, 'Judul tidak tersedia'),
+        link: await this._safeEvaluate(item, '.ar-title a', el => el.href, options, '#'),
+        tahun: parseInt(tahunText.match(/\d+/)?.[0] || 0),
+        sitasi: parseInt(sitasiText.match(/\d+/)?.[0] || 0),
+        jurnal: await this._safeEvaluate(item, '.ar-pub', el => {
+          return el.textContent.replace(/\s+/g, ' ').trim();
+        }, options, 'Jurnal tidak diketahui')
       });
     }
     
     return publications;
   },
 
-  async _safeEvaluate(page, selector, callback, retries = 3) {
+  async _safeEvaluate(page, selector, callback, options = {}, defaultValue, retries = 3) {
     while (retries > 0) {
       try {
+        const elements = await page.$$(selector);
+        if (elements.length === 0) return defaultValue;
+        
         if (typeof callback === 'function') {
-          return await page.$eval(selector, callback);
+          return await page.$$eval(selector, callback);
         }
         return await page.$eval(selector, el => el.textContent.trim());
       } catch (error) {
-        if (options.debug) console.log(`Retry selector ${selector}...`);
-        await page.waitForTimeout(1000);
+        if (options?.debug) console.log(`Retry selector ${selector}...`);
+        await new Promise(resolve => setTimeout(resolve, 1000));
         retries--;
       }
     }
-    throw new Error(`Selector ${selector} tidak ditemukan`);
+    return defaultValue;
   },
 
   _updateCache(sintaId, data) {
