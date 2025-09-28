@@ -1,0 +1,94 @@
+{
+  "sintaID": "6655767",
+  "name": "YAN YAN SOFIYAN",
+  "photoUrl": "",
+  "affiliation": "Universitas Sebelas April",
+  "department": "S1 - Sistem Informasi",
+  "studyProgram": "S1 - Sistem Informasi",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "279",
+  "sintaScoreOverall": 279,
+  "sintaScore3Years": "63",
+  "sintaScore3Yr": 63,
+  "affilScore": "279",
+  "affilScore3Years": "63",
+  "affilScore3Yr": 63,
+  "scopusMetrics": {
+    "articles": "5",
+    "citations": "32",
+    "citedDocs": "4",
+    "hIndex": "3",
+    "i10Index": "2",
+    "gIndex": "5"
+  },
+  "gsMetrics": {
+    "articles": "35",
+    "citations": "136",
+    "citedDocs": "13",
+    "hIndex": "7",
+    "i10Index": "5",
+    "gIndex": "1"
+  },
+  "wosMetrics": {
+    "articles": "0",
+    "citations": "0",
+    "citedDocs": "0",
+    "hIndex": "0",
+    "i10Index": "0",
+    "gIndex": "0"
+  },
+  "publications": [
+    {
+      "title": "Waste Classifier using Naive Bayes Algorithm",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 5
+    },
+    {
+      "title": "Microservices Technology on the Development of the Massive Open Online Course in Higher Educations",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123239934&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 0
+    },
+    {
+      "title": "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 3
+    },
+    {
+      "title": "Optimization Parameters Support Vector Regression using Grid Search Method",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123262739&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 12
+    },
+    {
+      "title": "Artificial Intelligence in the Game to Respond Emotion Using Fuzzy Text and Logic",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098716402&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management, CITSM 2020",
+      "year": 2020,
+      "cited": 0
+    },
+    {
+      "title": "Analysis of Web Security Using Open Web Application Security Project 10",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098727365&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 13
+    },
+    {
+      "title": "A Model of Virtual Learning Environments Using Micro-Lecture, MOODLE, and SLOODLE",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098739091&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 3
+    }
+  ]
+}

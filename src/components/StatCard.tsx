@@ -2,7 +2,7 @@ import { ReactNode } from 'react';
 
 interface StatCardProps {
   title: string;
-  value: string | number; // Changed to support string values
+  value: string | number;
   description: string;
   icon?: ReactNode;
   theme?: 'default' | 'success' | 'warning' | 'info';
@@ -13,7 +13,7 @@ export function StatCard({
   title, 
   value, 
   description, 
-  icon, 
+  icon,
   theme = 'default',
   formatter = (val) => {
     // Handle undefined/null values
@@ -23,22 +23,28 @@ export function StatCard({
   }
 }: StatCardProps) {
   const themeStyles = {
-    default: 'text-indigo-600',
-    success: 'text-green-600',
-    warning: 'text-amber-600',
-    info: 'text-blue-600'
+    default: 'text-black bg-white border-black',
+    success: 'text-black bg-green-200 border-green-700',
+    warning: 'text-black bg-yellow-200 border-yellow-700',
+    info: 'text-black bg-blue-200 border-blue-700'
   };
 
   return (
-    <div className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
-      <div className="flex items-center gap-3 mb-2">
-        {icon && <div className={themeStyles[theme]}>{icon}</div>}
-        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+    <div className={`border-4 ${themeStyles[theme]} p-4 shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}>
+      <div className="flex items-center justify-between">
+        <div>
+          <p className="text-sm font-bold text-black">{title}</p>
+          <p className={`text-xl font-bold mt-1`}>
+            {formatter(value)}
+          </p>
+        </div>
+        {icon && (
+          <div className={`p-2 border-2 border-black`}>
+            {icon}
+          </div>
+        )}
       </div>
-      <p className={`text-3xl font-bold ${themeStyles[theme]} mb-2`}>
-        {formatter(value)}
-      </p>
-      <p className="text-sm text-gray-600">{description}</p>
+      <p className="text-xs font-bold text-black mt-2">{description}</p>
     </div>
   );
 }

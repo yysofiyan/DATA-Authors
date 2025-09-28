@@ -1,113 +1,151 @@
 import express from 'express';
 import cors from 'cors';
+import sintaScraper from './scrapers/sintaScraper.js';
+import { writeFileSync } from 'fs';
 
 const app = express();
-const PORT = process.env.PORT || 5001; // Ganti 5000 menjadi 5001
+const PORT = process.env.PORT || 3001; // Keep original port
 
-app.use(cors());
+// Add logging middleware
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.path}`);
+  next();
+});
+
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://localhost:3000', 'http://127.0.0.1:5173'],
+  credentials: true
+}));
 app.use(express.json());
 
-// Contoh data penulis
-const authors = [
-  {
-    sintaID: "6655767",
-    name: "YAN YAN SOFIYAN",
-    photoUrl: "https://scholar.google.co.id/citations?view_op=view_photo&user=OX1ogLQAAAAJ&citpid=1",
-    affiliation: "Universitas Sebelas April",
-    studyProgram: "S1 - Sistem Informasi",
-    institutionName: "Universitas Sebelas April",
-    institutionLocation: "KAB. SUMEDANG - JAWA BARAT, ID",
-    codePT: "041097",
-    codeProdi: "57201",
-
-    // Metrics
-    sintaScoreOverall: 224,
-    sintaScore3Yr: 79,
-    affilScore: 0,
-    affilScore3Yr: 0,
-
-    // Scopus metrics
-    scopusMetrics: {
-      articles: 5,
-      citations: 22,
-      hIndex: 3,
-      i10Index: 1,
-      gIndex: 2,
-      citedDocs: 4
-    },
-
-    // Google Scholar metrics
-    gsMetrics: {
-      articles: 28,
-      citations: 126,
-      hIndex: 7,
-      i10Index: 5,
-      gIndex: 1,
-      citedDocs: 12
-    },
-
-    // Web of Science metrics
-    wosMetrics: {
-      articles: 0,
-      citations: 0,
-      citedDocs: 0,
-      hIndex: "-",
-      i10Index: "-",
-      gIndex: "-"
-    },
-
-    // Publications array
-    publications: [
-      {
-        title: "Waste Classifier using Naive Bayes Algorithm",
-        url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992",
-        type: "no-Q as Conference Proceedin",
-        journal_conference: "2022 10th International Conference on Cyber and IT Service Management, CITSM 2022",
-        authorOrder: "5 of 6", // Diubah dari AuthorOrder
-        creator: "Fadil I.", // Diubah dari Creator
-        year: 2022,
-        cited: 4
-      },
-      {
-        title: "Microservices Technology on the Development of the Massive Open Online Course in Higher Educations",
-        url: "https://www.scopus.com/authid/detail.uri?authorId=57421449500",
-        type: "no-Q as Conference Proceedin",
-        journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
-        authorOrder: "1 of 3",
-        creator: "Sofiyan Y.",
-        year: 2021,
-        cited: 0
-      },
-      {
-        title: "Security Model using Intrusion Detection System on Cloud Computing Security Management",
-        url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
-        type: "no-Q as Conference Procedin",
-        journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
-        authorOrder: "3 of 4",
-        creator: "Helmiawan M.A.",
-        year: 2021,
-        cited: 2
-      },
-      {
-        title: "Optimization Parameters Support Vector Regression using Grid Search Method",
-        journal_conference: "2021 9th International Conference on Cyber and IT Service Management, CITSM 2021",
-        year: 2021,
-        cited: 6
-      }
-    ]
-  },
-  // Tambahkan penulis lain sesuai kebutuhan
-];
-
-// Endpoint untuk mengambil data penulis
-app.get('/api/authors', (req, res) => {
-  res.json(authors);
+// Simple test endpoint
+app.get('/api/test', (req, res) => {
+  console.log('Test endpoint hit');
+  res.json({ message: 'API is working', timestamp: new Date().toISOString() });
 });
 
-// Menjalankan server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+// Simple test endpoint for quick response
+app.get('/api/quick-test', (req, res) => {
+  console.log('Quick test endpoint hit');
+  res.json({ message: 'Quick test working', data: { name: 'Test User', articles: 10 } });
 });
 
-// Ekspor app setelah deklarasi
-export default app;
+// Endpoint untuk mengambil data penulis berdasarkan Sinta ID
+app.get('/api/authors/:sintaId', async (req, res) => {
+  try {
+    console.log(`Received request for Sinta ID: ${req.params.sintaId}`);
+    const { sintaId } = req.params;
+    
+    // Validate Sinta ID format
+    if (!/^\d+$/.test(sintaId)) {
+      console.log(`Invalid Sinta ID format: ${sintaId}`);
+      return res.status(400).json({ 
+        error: 'Invalid Sinta ID format' 
+      });
+    }
+    
+    console.log(`Starting to scrape data for Sinta ID: ${sintaId}`);
+    const profile = await sintaScraper.getAuthorProfile(sintaId, {
+      headless: true,
+      debug: true,
+      forceRefresh: true  // Always get fresh data
+    });
+    
+    // Transform the data to match the expected structure
+    const transformedProfile = {
+      sintaID: profile.sinta_id || sintaId,
+      name: profile.nama || 'N/A',
+      photoUrl: '',
+      affiliation: profile.afiliasi || 'N/A',
+      department: profile.program_studi || 'N/A',
+      studyProgram: profile.program_studi || 'N/A',
+      institutionName: '',
+      institutionLocation: '',
+      codePT: '',
+      codeProdi: '',
+      sintaScore: profile.skor?.sinta_total?.toString() || '0',
+      sintaScoreOverall: profile.skor?.sinta_total || 0,
+      sintaScore3Years: profile.skor?.sinta_3tahun?.toString() || '0',
+      sintaScore3Yr: profile.skor?.sinta_3tahun || 0,
+      affilScore: profile.skor?.afiliasi_total?.toString() || '0',
+      affilScore3Years: profile.skor?.afiliasi_3tahun?.toString() || '0',
+      affilScore3Yr: profile.skor?.afiliasi_3tahun || 0,
+      scopusMetrics: {
+        articles: profile.scopusMetrics?.articles?.toString() || '0',
+        citations: profile.scopusMetrics?.citations?.toString() || '0',
+        citedDocs: profile.scopusMetrics?.citedDocs?.toString() || '0',
+        hIndex: profile.scopusMetrics?.hIndex?.toString() || '0',
+        i10Index: profile.scopusMetrics?.i10Index?.toString() || '0',
+        gIndex: profile.scopusMetrics?.gIndex?.toString() || '0'
+      },
+      gsMetrics: {
+        articles: profile.gsMetrics?.articles?.toString() || '0',
+        citations: profile.gsMetrics?.citations?.toString() || '0',
+        citedDocs: profile.gsMetrics?.citedDocs?.toString() || '0',
+        hIndex: profile.gsMetrics?.hIndex?.toString() || '0',
+        i10Index: profile.gsMetrics?.i10Index?.toString() || '0',
+        gIndex: profile.gsMetrics?.gIndex?.toString() || '0'
+      },
+      wosMetrics: {
+        articles: profile.wosMetrics?.articles?.toString() || '0',
+        citations: profile.wosMetrics?.citations?.toString() || '0',
+        citedDocs: profile.wosMetrics?.citedDocs?.toString() || '0',
+        hIndex: profile.wosMetrics?.hIndex?.toString() || '0',
+        i10Index: profile.wosMetrics?.i10Index?.toString() || '0',
+        gIndex: profile.wosMetrics?.gIndex?.toString() || '0'
+      },
+      publications: (profile.publikasi || []).map((pub) => ({
+        title: pub.judul || 'Untitled',
+        url: pub.link || '#',
+        journal_conference: pub.jurnal || 'Journal information not available',
+        year: pub.tahun || 0,
+        cited: pub.sitasi || 0
+      }))
+    };
+    
+    // Save to JSON file in the public directory with Sinta ID in filename
+    const filename = `public/profile-${sintaId}.json`;
+    writeFileSync(filename, JSON.stringify(transformedProfile, null, 2));
+    console.log(`Data successfully saved to ${filename}`);
+    
+    console.log(`Successfully fetched data for Sinta ID: ${sintaId}`);
+    console.log('Sending response to client...');
+    res.json(transformedProfile);
+    console.log('Response sent successfully');
+  } catch (error) {
+    console.error('Error during scraping:', error.message);
+    console.error('Stack trace:', error.stack);
+    res.status(500).json({ 
+      error: 'Failed to fetch author data', 
+      details: error.message 
+    });
+  }
+});
+
+// Handle 404 - This should be at the end
+app.use('*', (req, res) => {
+  console.log(`404 - Route not found: ${req.originalUrl}`);
+  res.status(404).json({ error: 'Route not found' });
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err);
+  res.status(500).json({ 
+    error: 'Internal server error', 
+    details: err.message 
+  });
+});
+
+// Handle port in use error
+const server = app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+  console.log(`Try accessing http://localhost:${PORT}/api/test to verify it's working`);
+}).on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.log(`Port ${PORT} is already in use. Please stop the process using this port or restart your computer.`);
+    console.log('You can find the process using this port with: lsof -i :' + PORT);
+  } else {
+    console.error('Server error:', err);
+  }
+});

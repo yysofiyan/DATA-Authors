@@ -28,3 +28,6 @@ dist-ssr
 errors.log
 error.html
 error.png
+
+docs
+debug

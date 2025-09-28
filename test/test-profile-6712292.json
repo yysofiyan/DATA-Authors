@@ -1,0 +1,39 @@
+{
+  "nama": "MONA YULIANTI KUSUMAH",
+  "afiliasi": "Universitas Sebelas April",
+  "program_studi": "S1 - Ilmu Keperawatan",
+  "sinta_id": "6712292",
+  "bidang_keahlian": [],
+  "skor": {
+    "sinta_total": 119,
+    "sinta_3tahun": 61,
+    "afiliasi_total": 119,
+    "afiliasi_3tahun": 61
+  },
+  "penelitian": [],
+  "scopusMetrics": {
+    "articles": 0,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 0,
+    "i10Index": 0,
+    "gIndex": 0
+  },
+  "gsMetrics": {
+    "articles": 26,
+    "citations": 34,
+    "citedDocs": 14,
+    "hIndex": 3,
+    "i10Index": 0,
+    "gIndex": 1
+  },
+  "wosMetrics": {
+    "articles": 0,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 0,
+    "i10Index": 0,
+    "gIndex": 0
+  },
+  "publikasi": []
+}

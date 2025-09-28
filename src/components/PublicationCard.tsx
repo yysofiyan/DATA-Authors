@@ -7,52 +7,58 @@ interface PublicationCardProps {
 
 export function PublicationCard({ publication }: PublicationCardProps) {
   return (
-    <div className="bg-white rounded-lg p-6 shadow hover:shadow-lg transition-shadow">
-      <h3 className="text-lg font-semibold text-gray-800 mb-3 flex items-start gap-2">
-        <FileText className="w-5 h-5 text-indigo-600 flex-shrink-0 mt-1" />
-        <span>{publication.title}</span>
-      </h3>
-      
-      <div className="space-y-2 text-gray-600">
-        {publication.type && (
-          <p className="text-sm text-gray-500">Type: {publication.type}</p>
-        )}
-        {publication.journal_conference && (
-          <p className="text-sm">{publication.journal_conference}</p>
-        )}
-        {publication.creator && (
-          <div className="flex items-center gap-2">
-            <p className="text-sm text-indigo-600">Author: {publication.creator}</p>
-            {publication.authorOrder && (
-              <p className="text-sm text-gray-500">Author Order: ({publication.authorOrder})</p>
+    <div className="border-4 border-black bg-white p-5 shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:shadow-[6px_6px_0_0_rgba(0,0,0,1)] transition-all duration-200">
+      <div className="flex items-start gap-3">
+        <div className="flex-shrink-0 mt-1">
+          <FileText className="w-5 h-5 text-black" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className="text-base font-bold text-black mb-2 leading-tight">
+            {publication.title}
+          </h3>
+          
+          <div className="space-y-2 text-black">
+            {publication.journal_conference && (
+              <p className="text-sm">{publication.journal_conference}</p>
             )}
+            
+            {publication.creator && (
+              <div className="flex items-center gap-2">
+                <p className="text-sm font-bold text-black">Author: {publication.creator}</p>
+                {publication.authorOrder && (
+                  <span className="inline-flex items-center px-2 py-0.5 border-2 border-black text-xs font-bold bg-white text-black">
+                    {publication.authorOrder}
+                  </span>
+                )}
+              </div>
+            )}
+            
+            <div className="flex flex-wrap items-center gap-4 mt-3">
+              {publication.year && (
+                <div className="flex items-center gap-1.5">
+                  <Calendar className="w-4 h-4 text-black" />
+                  <span className="text-sm font-bold">{publication.year}</span>
+                </div>
+              )}
+              {publication.cited !== undefined && publication.cited > 0 && (
+                <div className="flex items-center gap-1.5">
+                  <Quote className="w-4 h-4 text-black" />
+                  <span className="text-sm font-bold">{publication.cited} citations</span>
+                </div>
+              )}
+              {publication.url && publication.url !== '#' && (
+                <a 
+                  href={publication.url}
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center gap-1.5 text-black hover:text-blue-700 text-sm font-bold transition-colors border-b-2 border-black"
+                >
+                  <LinkIcon className="w-4 h-4" />
+                  <span>View Publication</span>
+                </a>
+              )}
+            </div>
           </div>
-        )}
-        
-        <div className="flex flex-wrap items-center gap-6">
-          {publication.year && (
-            <div className="flex items-center gap-1">
-              <Calendar className="w-4 h-4" />
-              <span>{publication.year}</span>
-            </div>
-          )}
-          {publication.cited && (
-            <div className="flex items-center gap-1">
-              <Quote className="w-4 h-4" />
-              <span>{publication.cited} citations</span>
-            </div>
-          )}
-          {publication.url && (
-            <a 
-              href={publication.url}
-              target="_blank"
-              rel="noopener noreferrer" 
-              className="flex items-center gap-1 text-indigo-600 hover:text-indigo-800"
-            >
-              <LinkIcon className="w-4 h-4" />
-              <span>View Publication</span>
-            </a>
-          )}
         </div>
       </div>
     </div>

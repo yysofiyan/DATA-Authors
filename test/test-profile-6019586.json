@@ -1,0 +1,110 @@
+{
+  "nama": "NURMAINI",
+  "afiliasi": "Universitas Sumatera Utara",
+  "program_studi": "S3 - Ilmu Kesehatan Masyarakat",
+  "sinta_id": "6019586",
+  "bidang_keahlian": [],
+  "skor": {
+    "sinta_total": 515,
+    "sinta_3tahun": 207,
+    "afiliasi_total": 515,
+    "afiliasi_3tahun": 207
+  },
+  "penelitian": [],
+  "scopusMetrics": {
+    "articles": 0,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 4,
+    "i10Index": 2,
+    "gIndex": 1
+  },
+  "gsMetrics": {
+    "articles": 96,
+    "citations": 215,
+    "citedDocs": 43,
+    "hIndex": 9,
+    "i10Index": 7,
+    "gIndex": 1
+  },
+  "wosMetrics": {
+    "articles": 1,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 0,
+    "i10Index": 0,
+    "gIndex": 1
+  },
+  "publikasi": [
+    {
+      "judul": "Community-based malaria prevention policy model in Rampah Village, Kutambaru District, Langkat Regency, Indonesia",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85202958859&origin=resultslist",
+      "tahun": 2024,
+      "sitasi": 0,
+      "jurnal": "Journal of Infrastructure Policy and Development"
+    },
+    {
+      "judul": "Behavioural determinants of women of reproductive age in the indigenous Talang Mamak Ethnic group",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85186361525&origin=resultslist",
+      "tahun": 2024,
+      "sitasi": 1,
+      "jurnal": "African Journal of Reproductive Health"
+    },
+    {
+      "judul": "Healthy Childbirth Model Based on Husband's Support in Poor Families in Deli Serdang, North Sumatra Province, Indonesia",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85171801420&origin=resultslist",
+      "tahun": 2023,
+      "sitasi": 1,
+      "jurnal": "Universal Journal of Public Health"
+    },
+    {
+      "judul": "Exploring the potentiality of family resources on basic household sanitation management in dense settlements of binjai in north Sumatera province of Indonesia",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85112520197&origin=resultslist",
+      "tahun": 2021,
+      "sitasi": 0,
+      "jurnal": "Open Access Macedonian Journal of Medical Sciences"
+    },
+    {
+      "judul": "The phenomenon of family empowerment in caring for people with mental disorders",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85116902665&origin=resultslist",
+      "tahun": 2021,
+      "sitasi": 1,
+      "jurnal": "Open Access Macedonian Journal of Medical Sciences"
+    },
+    {
+      "judul": "Pesticide toxicity prevention in farmer’s community movement",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85100053643&origin=resultslist",
+      "tahun": 2021,
+      "sitasi": 4,
+      "jurnal": "Open Access Macedonian Journal of Medical Sciences"
+    },
+    {
+      "judul": "THE RELATIONSHIP BETWEEN ARM EXERCISES AND THE INCIDENCE OF LYMPHEDEMA IN POST-MASTECTOMY BREAST CANCER PATIENTS IN RSUPH ADAM MALIK MEDAN",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85160647717&origin=resultslist",
+      "tahun": 2021,
+      "sitasi": 0,
+      "jurnal": "Malaysian Journal of Nursing"
+    },
+    {
+      "judul": "Determinants of unsafe behavior in pesticide usage among horticulture farmer",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85091345451&origin=resultslist",
+      "tahun": 2020,
+      "sitasi": 10,
+      "jurnal": "Open Access Macedonian Journal of Medical Sciences"
+    },
+    {
+      "judul": "The relationship of gender, school sanitation and personal hygiene with helminthiasis at juhar karo regency in North Sumatera Province, Indonesia",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85078327354&origin=resultslist",
+      "tahun": 2019,
+      "sitasi": 5,
+      "jurnal": "Open Access Macedonian Journal of Medical Sciences"
+    },
+    {
+      "judul": "Relationship between sanitation hygiene and health care with healthy family security of the family of smokers at berastagi subdistrict",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85075918899&origin=resultslist",
+      "tahun": 2019,
+      "sitasi": 6,
+      "jurnal": "Open Access Macedonian Journal of Medical Sciences"
+    }
+  ]
+}

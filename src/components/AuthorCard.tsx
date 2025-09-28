@@ -14,84 +14,94 @@ interface AuthorCardProps {
 export function AuthorCard({ author, onClick }: AuthorCardProps) {
   return (
     // Container utama kartu dengan styling dan efek hover
-    <div className="bg-white rounded-lg p-6 shadow hover:shadow-xl transition-all cursor-pointer" onClick={onClick}>
+    <div 
+      className="border-4 border-black bg-white p-6 shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:shadow-[6px_6px_0_0_rgba(0,0,0,1)] transition-all duration-200 cursor-pointer"
+      onClick={onClick}
+    >
       {/* Layout flex untuk konten kartu */}
       <div className="flex items-start gap-4">
         {/* Container untuk foto profil */}
-        <div className="p-3 bg-indigo-100 rounded-full">
+        <div className="flex-shrink-0">
           {author.photoUrl ? (
             // Jika ada URL foto, tampilkan gambar profil
-            <img src={author.photoUrl} alt={author.name} className="w-12 h-12 rounded-full object-cover" />
+            <img 
+              src={author.photoUrl} 
+              alt={author.name} 
+              className="w-16 h-16 rounded-full object-cover border-4 border-black"
+            />
           ) : (
             // Jika tidak ada URL foto, tampilkan ikon User sebagai fallback
-            <User className="w-6 h-6 text-indigo-600" />
+            <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center border-4 border-black">
+              <User className="w-8 h-8 text-black" />
+            </div>
           )}
         </div>
 
         {/* Bagian utama konten kartu */}
-        <div className="flex-1">
+        <div className="flex-1 min-w-0">
           {/* Nama penulis */}
-          <h3 className="text-xl font-semibold text-gray-800 mb-2">{author.name}</h3>
+          <h3 className="text-xl font-bold text-black mb-1 truncate">{author.name}</h3>
+          <p className="text-sm font-bold text-black mb-3">Sinta ID: {author.sintaID}</p>
 
           {/* Informasi dasar penulis */}
-          <div className="space-y-2 text-sm text-gray-600">
+          <div className="space-y-2 text-sm text-black">
             {/* Baris untuk menampilkan afiliasi */}
             <div className="flex items-center gap-2">
-              <Building2 className="w-4 h-4" />
-              <span>{author.affiliation}</span>
+              <Building2 className="w-4 h-4 flex-shrink-0" />
+              <span className="truncate">{author.affiliation}</span>
             </div>
             
             {/* Baris untuk menampilkan program studi */}
             <div className='flex items-center gap-2'>
-              <GraduationCapIcon className='w-4 h-4' />
-              <span>{author.studyProgram}</span>
+              <GraduationCapIcon className='w-4 h-4 flex-shrink-0' />
+              <span className="truncate">{author.studyProgram}</span>
             </div>
           </div>
 
           {/* Grid untuk menampilkan metrik SINTA */}
-          <div className="mt-4 grid grid-cols-2 gap-4">
+          <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             {/* Kartu untuk SINTA Score Overall */}
-            <div className="text-center p-2 bg-indigo-50 rounded-lg">
+            <div className="text-center p-3 bg-gray-100 border-2 border-black">
               <div className="flex items-center justify-center gap-2 mb-1">
-                <Award className="w-4 h-4 text-indigo-600" />
-                <div className="text-2xl font-bold text-indigo-600">
-                  {author.sintaScoreOverall}
+                <Award className="w-4 h-4 text-black" />
+                <div className="text-lg font-bold text-black">
+                  {Number(author.sintaScoreOverall) || 0}
                 </div>
               </div>
-              <div className="text-xs text-gray-600">SINTA Score</div>
+              <div className="text-xs font-bold text-black truncate">SINTA Score</div>
             </div>
 
             {/* Kartu untuk SINTA Score 3 Tahun */}
-            <div className="text-center p-2 bg-indigo-50 rounded-lg">
+            <div className="text-center p-3 bg-gray-100 border-2 border-black">
               <div className="flex items-center justify-center gap-2 mb-1">
-                <TrendingUp className="w-4 h-4 text-indigo-600" />
-                <div className="text-2xl font-bold text-indigo-600">
-                  {author.sintaScore3Yr}
+                <TrendingUp className="w-4 h-4 text-black" />
+                <div className="text-lg font-bold text-black">
+                  {Number(author.sintaScore3Yr) || 0}
                 </div>
               </div>
-              <div className="text-xs text-gray-600">SINTA 3Yr</div>
+              <div className="text-xs font-bold text-black truncate">SINTA 3Yr</div>
             </div>
 
             {/* Kartu untuk Affil Score */}
-            <div className="text-center p-2 bg-indigo-50 rounded-lg">
+            <div className="text-center p-3 bg-gray-100 border-2 border-black">
               <div className="flex items-center justify-center gap-2 mb-1">
-                <Building2 className="w-4 h-4 text-indigo-600" />
-                <div className="text-2xl font-bold text-indigo-600">
-                  {author.affilScore}
+                <Building2 className="w-4 h-4 text-black" />
+                <div className="text-lg font-bold text-black">
+                  {Number(author.affilScore) || 0}
                 </div>
               </div>
-              <div className="text-xs text-gray-600">Affil Score</div>
+              <div className="text-xs font-bold text-black truncate">Affil Score</div>
             </div>
 
             {/* Kartu untuk Affil Score 3 Tahun */}
-            <div className="text-center p-2 bg-indigo-50 rounded-lg">
+            <div className="text-center p-3 bg-gray-100 border-2 border-black">
               <div className="flex items-center justify-center gap-2 mb-1">
-                <BarChart className="w-4 h-4 text-indigo-600" />
-                <div className="text-2xl font-bold text-indigo-600">
-                  {author.affilScore3Yr}
+                <BarChart className="w-4 h-4 text-black" />
+                <div className="text-lg font-bold text-black">
+                  {Number(author.affilScore3Yr) || 0}
                 </div>
               </div>
-              <div className="text-xs text-gray-600">Affil 3Yr</div>
+              <div className="text-xs font-bold text-black truncate">Affil 3Yr</div>
             </div>
           </div>
         </div>

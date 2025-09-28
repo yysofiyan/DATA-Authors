@@ -1,3 +1,176 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --brutal-black: #000;
+        --brutal-white: #fff;
+        --brutal-red: #ff4757;
+        --brutal-blue: #3742fa;
+        --brutal-green: #2ed573;
+        --brutal-yellow: #ffa502;
+        --brutal-purple: #a55eea;
+    }
+
+    body {
+        @apply bg-white text-black font-sans;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-bold;
+    }
+}
+
+@layer components {
+
+    /* Brutal button */
+    .btn-brutal {
+        @apply px-4 py-2 font-bold text-black border-4 border-black bg-white shadow-[4px_4px_0_0_#000] transition-all duration-200 hover:shadow-[6px_6px_0_0_#000] active:shadow-none;
+    }
+
+    .btn-brutal-primary {
+        @apply btn-brutal bg-blue-500 border-blue-700;
+    }
+
+    .btn-brutal-secondary {
+        @apply btn-brutal bg-gray-200 border-gray-400;
+    }
+
+    .btn-brutal-success {
+        @apply btn-brutal bg-green-500 border-green-700;
+    }
+
+    .btn-brutal-error {
+        @apply btn-brutal bg-red-500 border-red-700;
+    }
+
+    /* Brutal card */
+    .card-brutal {
+        @apply border-4 border-black bg-white shadow-[4px_4px_0_0_#000] p-6;
+    }
+
+    /* Brutal input */
+    .input-brutal {
+        @apply px-4 py-2 font-bold border-4 border-black bg-white shadow-[4px_4px_0_0_#000] focus:outline-none focus:shadow-[6px_6px_0_0_#000] active:shadow-none transition-all duration-200;
+    }
+
+    /* Brutal tag/badge */
+    .badge-brutal {
+        @apply inline-block px-2 py-1 font-bold border-2 border-black;
+    }
+
+    .badge-brutal-primary {
+        @apply badge-brutal bg-blue-500 border-blue-700;
+    }
+
+    .badge-brutal-secondary {
+        @apply badge-brutal bg-gray-200 border-gray-400;
+    }
+
+    .badge-brutal-success {
+        @apply badge-brutal bg-green-500 border-green-700;
+    }
+
+    /* Brutal alert */
+    .alert-brutal {
+        @apply border-4 border-black p-4 font-bold;
+    }
+
+    .alert-brutal-error {
+        @apply alert-brutal bg-red-200 border-red-700;
+    }
+
+    .alert-brutal-success {
+        @apply alert-brutal bg-green-200 border-green-700;
+    }
+
+    .alert-brutal-info {
+        @apply alert-brutal bg-blue-200 border-blue-700;
+    }
+
+    /* Brutal footer */
+    .footer-brutal {
+        @apply bg-white border-4 border-black mt-12 shadow-[4px_4px_0_0_#000];
+    }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes brutalPulse {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(2px, 2px);
+    }
+
+    50% {
+        transform: translate(4px, 4px);
+    }
+
+    75% {
+        transform: translate(2px, 2px);
+    }
+}
+
+/* Custom utilities */
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.animate-brutal-pulse {
+    animation: brutalPulse 0.5s ease-in-out;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Shimmer animation for skeleton loading */
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.animate-shimmer {
+    animation: shimmer 2s infinite linear;
+}

@@ -1,0 +1,39 @@
+{
+  "nama": "ARIFIN",
+  "afiliasi": "Universitas Sebelas April",
+  "program_studi": "S1 - Pendidikan Matematika",
+  "sinta_id": "6660457",
+  "bidang_keahlian": [],
+  "skor": {
+    "sinta_total": 634,
+    "sinta_3tahun": 246,
+    "afiliasi_total": 634,
+    "afiliasi_3tahun": 246
+  },
+  "penelitian": [],
+  "scopusMetrics": {
+    "articles": 0,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 0,
+    "i10Index": 0,
+    "gIndex": 0
+  },
+  "gsMetrics": {
+    "articles": 91,
+    "citations": 631,
+    "citedDocs": 45,
+    "hIndex": 9,
+    "i10Index": 9,
+    "gIndex": 1
+  },
+  "wosMetrics": {
+    "articles": 0,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 0,
+    "i10Index": 0,
+    "gIndex": 0
+  },
+  "publikasi": []
+}

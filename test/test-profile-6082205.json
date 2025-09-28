@@ -1,0 +1,110 @@
+{
+  "nama": "DWI YUNIARTO",
+  "afiliasi": "Universitas Sebelas April",
+  "program_studi": "S1 - Informatika",
+  "sinta_id": "6082205",
+  "bidang_keahlian": [],
+  "skor": {
+    "sinta_total": 999,
+    "sinta_3tahun": 367,
+    "afiliasi_total": 999,
+    "afiliasi_3tahun": 367
+  },
+  "penelitian": [],
+  "scopusMetrics": {
+    "articles": 16,
+    "citations": 55,
+    "citedDocs": 12,
+    "hIndex": 4,
+    "i10Index": 1,
+    "gIndex": 1
+  },
+  "gsMetrics": {
+    "articles": 94,
+    "citations": 285,
+    "citedDocs": 45,
+    "hIndex": 9,
+    "i10Index": 7,
+    "gIndex": 1
+  },
+  "wosMetrics": {
+    "articles": 0,
+    "citations": 0,
+    "citedDocs": 0,
+    "hIndex": 0,
+    "i10Index": 0,
+    "gIndex": 0
+  },
+  "publikasi": [
+    {
+      "judul": "Artificial intelligence of things: society readiness",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014483837&origin=resultslist",
+      "tahun": 2025,
+      "sitasi": 0,
+      "jurnal": "Iaes International Journal of Artificial Intelligence"
+    },
+    {
+      "judul": "Evaluating the Effectiveness and Efficiency of A Website Using Cognitive Walkthrough Method",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85187788529&origin=resultslist",
+      "tahun": 2023,
+      "sitasi": 0,
+      "jurnal": "2023 11th International Conference on Cyber and IT Service Management, CITSM 2023"
+    },
+    {
+      "judul": "NETWORK EXTERNALITY EFFECTS ON BEHAVIORAL INTENTION TO USE CONSUMER INTERNET OF THINGS AMONG URBAN CITIZENS",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85159346931&origin=resultslist",
+      "tahun": 2023,
+      "sitasi": 3,
+      "jurnal": "Management Systems in Production Engineering"
+    },
+    {
+      "judul": "Adopting Five Planes Framework for Developing User Interface based on User Experience Aspects",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85187796960&origin=resultslist",
+      "tahun": 2023,
+      "sitasi": 3,
+      "jurnal": "2023 11th International Conference on Cyber and IT Service Management Citsm 2023"
+    },
+    {
+      "judul": "Evaluating the Effectiveness and Efficiency of A Website Using Cognitive Walkthrough Method",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105003890648&origin=resultslist",
+      "tahun": 2023,
+      "sitasi": 0,
+      "jurnal": "2023 11th International Conference on Cyber and IT Service Management Citsm 2023"
+    },
+    {
+      "judul": "Enhancing the Usability of Information Systems Internal Quality Assurance Systems: Recently Formed Universities Study",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142880845&origin=resultslist",
+      "tahun": 2022,
+      "sitasi": 2,
+      "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022"
+    },
+    {
+      "judul": "Tracer Study Information Systems Success in Private Higher Education Institution",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142910306&origin=resultslist",
+      "tahun": 2022,
+      "sitasi": 1,
+      "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022"
+    },
+    {
+      "judul": "Webqual Method on Online Course in Suburban Area: Post-Pandemic Study",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142915930&origin=resultslist",
+      "tahun": 2022,
+      "sitasi": 1,
+      "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022"
+    },
+    {
+      "judul": "Information System Project Success based on User Experience at the Village Administration Office",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123254081&origin=resultslist",
+      "tahun": 2021,
+      "sitasi": 1,
+      "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021"
+    },
+    {
+      "judul": "An Alternative Model to Measure Smart Space Implementing Success",
+      "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123266168&origin=resultslist",
+      "tahun": 2021,
+      "sitasi": 0,
+      "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021"
+    }
+  ]
+}
