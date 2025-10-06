@@ -1,0 +1,115 @@
+{
+  "sintaID": "6097073",
+  "name": "ESA FIRMANSYAH",
+  "photoUrl": "",
+  "affiliation": "Universitas Sebelas April",
+  "department": "S1 - Informatika",
+  "studyProgram": "S1 - Informatika",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "587",
+  "sintaScoreOverall": 587,
+  "sintaScore3Years": "159",
+  "sintaScore3Yr": 159,
+  "affilScore": "587",
+  "affilScore3Years": "159",
+  "affilScore3Yr": 159,
+  "scopusMetrics": {
+    "articles": "16",
+    "citations": "62",
+    "citedDocs": "12",
+    "hIndex": "4",
+    "i10Index": "2",
+    "gIndex": "1"
+  },
+  "gsMetrics": {
+    "articles": "62",
+    "citations": "358",
+    "citedDocs": "40",
+    "hIndex": "9",
+    "i10Index": "9",
+    "gIndex": "1"
+  },
+  "wosMetrics": {
+    "articles": "4",
+    "citations": "2",
+    "citedDocs": "1",
+    "hIndex": "1",
+    "i10Index": "0",
+    "gIndex": "2"
+  },
+  "publications": [
+    {
+      "title": "Engaging Teens in History through a Mobile Game Utilizing the Fisher-Yates Shuffle Algorithm and Honeycomb UX Design",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85210801169&origin=resultslist",
+      "journal_conference": "International Journal of Interactive Mobile Technologies",
+      "year": 2024,
+      "cited": 0
+    },
+    {
+      "title": "Integrated Academic Information System Based on The Perception of Ease And Benefits",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142900282&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 0
+    },
+    {
+      "title": "Tracer Study Information Systems Success in Private Higher Education Institution",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142910306&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 1
+    },
+    {
+      "title": "Enhancing the Usability of Information Systems Internal Quality Assurance Systems: Recently Formed Universities Study",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142880845&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 2
+    },
+    {
+      "title": "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 3
+    },
+    {
+      "title": "The K-Nearest Neighbor Algorithm for the Classification of Internet Users in Rural Campus",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123248997&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 0
+    },
+    {
+      "title": "Information System Project Success based on User Experience at the Village Administration Office",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123254081&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 1
+    },
+    {
+      "title": "Examining readiness of e-learning implementation using Aydin and Tasci model: A rural university case study in Indonesia",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85103823359&origin=resultslist",
+      "journal_conference": "Aip Conference Proceedings",
+      "year": 2021,
+      "cited": 7
+    },
+    {
+      "title": "Acceptance of Ubiquitous Registration Information Systems",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098710276&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 2
+    },
+    {
+      "title": "Analysis of Web Security Using Open Web Application Security Project 10",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098727365&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 13
+    }
+  ]
+}

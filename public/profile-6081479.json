@@ -1,0 +1,115 @@
+{
+  "sintaID": "6081479",
+  "name": "MUHAMMAD AGREINDRA HELMIAWAN",
+  "photoUrl": "",
+  "affiliation": "Universitas Sebelas April",
+  "department": "S1 - Informatika",
+  "studyProgram": "S1 - Informatika",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "744",
+  "sintaScoreOverall": 744,
+  "sintaScore3Years": "204",
+  "sintaScore3Yr": 204,
+  "affilScore": "744",
+  "affilScore3Years": "204",
+  "affilScore3Yr": 204,
+  "scopusMetrics": {
+    "articles": "10",
+    "citations": "51",
+    "citedDocs": "9",
+    "hIndex": "4",
+    "i10Index": "2",
+    "gIndex": "1"
+  },
+  "gsMetrics": {
+    "articles": "60",
+    "citations": "381",
+    "citedDocs": "47",
+    "hIndex": "11",
+    "i10Index": "14",
+    "gIndex": "2"
+  },
+  "wosMetrics": {
+    "articles": "0",
+    "citations": "0",
+    "citedDocs": "0",
+    "hIndex": "0",
+    "i10Index": "0",
+    "gIndex": "0"
+  },
+  "publications": [
+    {
+      "title": "Webqual Method on Online Course in Suburban Area: Post-Pandemic Study",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142915930&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 1
+    },
+    {
+      "title": "Waste Classifier using Naive Bayes Algorithm",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 5
+    },
+    {
+      "title": "Integrated Academic Information System Based on The Perception of Ease And Benefits",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142900282&origin=resultslist",
+      "journal_conference": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+      "year": 2022,
+      "cited": 0
+    },
+    {
+      "title": "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 3
+    },
+    {
+      "title": "Experimental Evaluation of Security Monitoring and Notification on Network Intrusion Detection System for Server Security",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123247287&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 3
+    },
+    {
+      "title": "Optimization Parameters Support Vector Regression using Grid Search Method",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123262739&origin=resultslist",
+      "journal_conference": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+      "year": 2021,
+      "cited": 12
+    },
+    {
+      "title": "Examining readiness of e-learning implementation using Aydin and Tasci model: A rural university case study in Indonesia",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85103823359&origin=resultslist",
+      "journal_conference": "Aip Conference Proceedings",
+      "year": 2021,
+      "cited": 7
+    },
+    {
+      "title": "Analysis of Web Security Using Open Web Application Security Project 10",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098727365&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 13
+    },
+    {
+      "title": "A Model of Virtual Learning Environments Using Micro-Lecture, MOODLE, and SLOODLE",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098739091&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 3
+    },
+    {
+      "title": "Analysis of Data Prediction Generate by Admission Student Application using Least Square Method",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098707941&origin=resultslist",
+      "journal_conference": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+      "year": 2020,
+      "cited": 4
+    }
+  ]
+}

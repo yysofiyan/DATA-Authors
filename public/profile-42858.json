@@ -1,0 +1,115 @@
+{
+  "sintaID": "42858",
+  "name": "ARIEF BUDIMAN",
+  "photoUrl": "",
+  "affiliation": "Universitas Gadjah Mada",
+  "department": "S2 - Magister Teknik Sistem",
+  "studyProgram": "S2 - Magister Teknik Sistem",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "6.493",
+  "sintaScoreOverall": 6.493,
+  "sintaScore3Years": "1.346",
+  "sintaScore3Yr": 1.346,
+  "affilScore": "6.493",
+  "affilScore3Years": "1.346",
+  "affilScore3Yr": 1.346,
+  "scopusMetrics": {
+    "articles": "201",
+    "citations": "1975",
+    "citedDocs": "174",
+    "hIndex": "22",
+    "i10Index": "69",
+    "gIndex": "1"
+  },
+  "gsMetrics": {
+    "articles": "394",
+    "citations": "3891",
+    "citedDocs": "271",
+    "hIndex": "32",
+    "i10Index": "112",
+    "gIndex": "1"
+  },
+  "wosMetrics": {
+    "articles": "0",
+    "citations": "0",
+    "citedDocs": "0",
+    "hIndex": "0",
+    "i10Index": "0",
+    "gIndex": "0"
+  },
+  "publications": [
+    {
+      "title": "Production and Characterization of Bio-Briquettes Derived from Torrefied Cocoa Pod Husk and Durian Peel",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105002599402&origin=resultslist",
+      "journal_conference": "Natural and Life Sciences Communications",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Fatty Acid Methyl Ester Production from Euglena gracilis through Mono and Multi-Light Spectrum Modification",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105002612493&origin=resultslist",
+      "journal_conference": "Natural and Life Sciences Communications",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Synthesis of Polyesters from AB Tung Oil-based Polyol Monomers Through Step-growth Polymerization Reactions",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105006615780&origin=resultslist",
+      "journal_conference": "Bulletin of Chemical Reaction Engineering and Catalysis",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Phycocyanin ultrasound assisted extraction from Spirulina (Arthrospira platensis) using sodium phosphate buffer solvent: Mass transfer modelling and stability test",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105003410000&origin=resultslist",
+      "journal_conference": "South African Journal of Chemical Engineering",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Microwave-Assisted Extraction of Polysaccharides from Chlorella pyrenoidosa and Its Characterization",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007572225&origin=resultslist",
+      "journal_conference": "Indonesian Journal of Chemistry",
+      "year": 2025,
+      "cited": 1
+    },
+    {
+      "title": "Catalytic Slow Pyrolysis of Rice Husk Pellets with Rice Husk Ash Catalyst Using Macro-TGA: Apparent Kinetics and Product Characterization",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85219575797&origin=resultslist",
+      "journal_conference": "Journal of Renewable Energy and Environment",
+      "year": 2025,
+      "cited": 1
+    },
+    {
+      "title": "Impact of salt stress on the α-tocopherol, carotenoid derivatives and flocculation efficiency of Euglena sp., Indonesian Strain",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85199152499&origin=resultslist",
+      "journal_conference": "Fisheries and Aquatic Sciences",
+      "year": 2024,
+      "cited": 0
+    },
+    {
+      "title": "Optimation of the cell density, biomass production, lipid, and carbohydrate content of Nannochloropsis oculata with fluorescein and pH manipulation",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85193849275&origin=resultslist",
+      "journal_conference": "Asia Pacific Journal of Molecular Biology and Biotechnology",
+      "year": 2024,
+      "cited": 0
+    },
+    {
+      "title": "Nitrogen Starvation for Increasing Lipid and Fatty Acid Methyl Ester on Euglena sp. Potential as Biojet Fuel",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85213336921&origin=resultslist",
+      "journal_conference": "Chiang Mai Journal of Science",
+      "year": 2024,
+      "cited": 0
+    },
+    {
+      "title": "Growth and Metabolite Enhancement of Acidophile Euglena sp. Isolated from Indonesia under Different Photoperiod Cycles",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85191941806&origin=resultslist",
+      "journal_conference": "Jurnal Ilmiah Perikanan Dan Kelautan",
+      "year": 2024,
+      "cited": 8
+    }
+  ]
+}

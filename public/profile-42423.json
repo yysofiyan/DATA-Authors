@@ -1,0 +1,115 @@
+{
+  "sintaID": "42423",
+  "name": "ABDUL ROHMAN",
+  "photoUrl": "",
+  "affiliation": "Universitas Gadjah Mada",
+  "department": "S3 - Doktor Ilmu Farmasi",
+  "studyProgram": "S3 - Doktor Ilmu Farmasi",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "17.643",
+  "sintaScoreOverall": 17.643,
+  "sintaScore3Years": "2.326",
+  "sintaScore3Yr": 2.326,
+  "affilScore": "17.643",
+  "affilScore3Years": "2.326",
+  "affilScore3Yr": 2.326,
+  "scopusMetrics": {
+    "articles": "446",
+    "citations": "7405",
+    "citedDocs": "386",
+    "hIndex": "41",
+    "i10Index": "198",
+    "gIndex": "2"
+  },
+  "gsMetrics": {
+    "articles": "2729",
+    "citations": "31450",
+    "citedDocs": "1703",
+    "hIndex": "75",
+    "i10Index": "639",
+    "gIndex": "8"
+  },
+  "wosMetrics": {
+    "articles": "163",
+    "citations": "3629",
+    "citedDocs": "152",
+    "hIndex": "32",
+    "i10Index": "99",
+    "gIndex": "17"
+  },
+  "publications": [
+    {
+      "title": "Application of Vis/NIR and FTIR Spectroscopy combined with Chemometrics for the Authentication of Red fruit oil from Coconut oil",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105005553012&origin=resultslist",
+      "journal_conference": "Research Journal of Pharmacy and Technology",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Authentication of avocado oil mixed with cooking oils (branded and loose palm oil) utilizing fourier transform infrared spectroscopy in conjunction with chemometrics",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105010892268&origin=resultslist",
+      "journal_conference": "Measurement Food",
+      "year": 2025,
+      "cited": 1
+    },
+    {
+      "title": "The employment of FTIR-ATR spectroscopy and GC-MS combined with chemometrics for rapid detection of adulteration of pork oil in Gabus fish oil (Channa striata) for halal authentication",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105001347683&origin=resultslist",
+      "journal_conference": "Open Veterinary Journal",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Physicochemical characteristics and SPME-GC-MS based volatilomics for discrimination of beef and pork patties",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009495205&origin=resultslist",
+      "journal_conference": "Canrea Journal Food Technology Nutritions and Culinary Journal",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Standard Review of the application of molecular spectroscopic and chromatographic-based methods for determination of trans fatty acids in food products",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85212965110&origin=resultslist",
+      "journal_conference": "Applied Food Research",
+      "year": 2025,
+      "cited": 2
+    },
+    {
+      "title": "Chemometrics Assisted-Liquid Chromatography (LC)-Orbitrap High Resolution Mass Spectrometry (HRMS) Non-Targeted Metabolomics for Identification of Dog Meat in Beef Sausages",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105011985855&origin=resultslist",
+      "journal_conference": "Food Science of Animal Resources",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Chemometrics applications in omics studies (Metabolomics, Lipidomics, and Proteomics) for halal authentication in food and pharmaceutical products",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85217816615&origin=resultslist",
+      "journal_conference": "Applied Food Research",
+      "year": 2025,
+      "cited": 1
+    },
+    {
+      "title": "Fingerprinting using vibrational spectroscopy and chemometrics for determining the presence of non-halal meats in food products",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105005758618&origin=resultslist",
+      "journal_conference": "Applied Food Research",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Advanced Mass Spectrometry for Dental Materials Integrated with Chromatography",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007966089&origin=resultslist",
+      "journal_conference": "Spectroscopic Tools and Techniques for Analysis of Dental Materials Current Trends",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Untargeted fast proteomics analysis using UPLC-Orbitrap HRMS for halal authentication of meat and meat products",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85213054170&origin=resultslist",
+      "journal_conference": "Journal of Proteomics",
+      "year": 2025,
+      "cited": 0
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "sintaID": "6016598",
+  "name": "HIMAWAN TRI BAYU MURTI PETRUS",
+  "photoUrl": "",
+  "affiliation": "Universitas Gadjah Mada",
+  "department": "S2 - Magister Teknik Kimia",
+  "studyProgram": "S2 - Magister Teknik Kimia",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "7.407",
+  "sintaScoreOverall": 7.407,
+  "sintaScore3Years": "1.859",
+  "sintaScore3Yr": 1.859,
+  "affilScore": "7.407",
+  "affilScore3Years": "1.859",
+  "affilScore3Yr": 1.859,
+  "scopusMetrics": {
+    "articles": "205",
+    "citations": "1399",
+    "citedDocs": "159",
+    "hIndex": "20",
+    "i10Index": "44",
+    "gIndex": "1"
+  },
+  "gsMetrics": {
+    "articles": "320",
+    "citations": "2390",
+    "citedDocs": "225",
+    "hIndex": "25",
+    "i10Index": "70",
+    "gIndex": "2"
+  },
+  "wosMetrics": {
+    "articles": "71",
+    "citations": "670",
+    "citedDocs": "68",
+    "hIndex": "15",
+    "i10Index": "22",
+    "gIndex": "4"
+  },
+  "publications": [
+    {
+      "title": "Polyethyleneimine-assisted polydopamine co-deposition for fabricating loose reverse osmosis membranes with enhanced antifouling and selectivity for lithium extraction from geothermal brine",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105012606144&origin=resultslist",
+      "journal_conference": "Journal of Water Process Engineering",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Controlled electrochemical synthesis of high-purity stannous sulphate (SnSO4) microparticles via Nafion 115-assisted membrane separation",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105015573182&origin=resultslist",
+      "journal_conference": "Sustainable Chemistry for Climate Action",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Understanding membrane fouling in pressure-driven and thermal-driven processes for brines applications: challenges, mechanisms, characterization, mitigation strategies, and future perspectives",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105002023880&origin=resultslist",
+      "journal_conference": "Journal of Water Process Engineering",
+      "year": 2025,
+      "cited": 2
+    },
+    {
+      "title": "Sustainable Lithium Recovery Using Li/Al LDHs Synthesized from Aluminium Multi-Layer Plastic Waste: A Resource Upcycling Approach",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009543593&origin=resultslist",
+      "journal_conference": "Circular Economy and Sustainability",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "The Influence of Precursor to Activator Ratio and Curing Temperature on Geopolymer Paste with One-Part Method",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014103933&origin=resultslist",
+      "journal_conference": "Civil Engineering Journal Iran",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Characterization and Upgrading of Zircon Sand from Central Kalimantan Placer Gold Mine Tailings for Zirconia Production",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85217767463&origin=resultslist",
+      "journal_conference": "Mining, Metallurgy and Exploration",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Enhanced modified Magnetite Bentonite-CaO/FeCl3 from solid waste for highly efficient Methylene blue removal",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105004343875&origin=resultslist",
+      "journal_conference": "Global Nest Journal",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Controlled Particle Size Distribution in Ultrasound-Assisted Lithium Carbonate Precipitation",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105010710994&origin=resultslist",
+      "journal_conference": "ACS Omega",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Graphene Oxide with Neodymium Oxide Composite Using Sonochemical Method as Electrode Material for Supercapacitor",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014614187&origin=resultslist",
+      "journal_conference": "JOM",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Valorization of Solid Residue from the Lateritic Nickel Ore Leaching Process for Ferronickel Production",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105001083487&origin=resultslist",
+      "journal_conference": "Waste and Biomass Valorization",
+      "year": 2025,
+      "cited": 1
+    }
+  ]
+}

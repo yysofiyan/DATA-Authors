@@ -29,21 +29,21 @@ export function MetricsTable({ scopusMetrics, gsMetrics }: MetricsTableProps) {
 
   return (
     <div className="bg-white rounded-lg p-6 shadow hover:shadow-lg transition-shadow mb-8">
-      <h3 className="text-lg font-semibold text-gray-800 mb-4">Research Metrics</h3>
+      <h3 className="text-lg font-semibold text-gray-800 mb-4"> {/* Research Metrics */}</h3>
       <table className="w-full text-left">
         <thead>
           <tr className="border-b">
-            <th className="py-2">Metric</th>
-            <th className="py-2">Scopus</th>
-            <th className="py-2">Google Scholar</th>
+            <th className="py-2"> {/* Metric */}</th>
+            <th className="py-2"> {/* Scopus */}</th>
+            <th className="py-2"> {/* Google Scholar */}</th>
           </tr>
         </thead>
         <tbody>
           {metrics.map((metric, index) => (
             <tr key={index} className="border-b last:border-b-0">
-              <td className="py-2 text-gray-600">{metric.label}</td>
-              <td className="py-2 text-indigo-600">{metric.scopus}</td>
-              <td className="py-2 text-green-600">{metric.gs}</td>
+              <td className="py-2 text-gray-600">{/* Metric */ metric.label}</td>
+              <td className="py-2 text-indigo-600">{/* Scopus */ metric.scopus}</td>
+              <td className="py-2 text-green-600">{/* GS */ metric.gs}</td>
             </tr>
           ))}
         </tbody>

@@ -30,8 +30,8 @@ export function StatCard({
   };
 
   return (
-    <div className={`border-4 ${themeStyles[theme]} p-4 shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}>
-      <div className="flex items-center justify-between">
+    <div className={`border-4 ${themeStyles[theme]} p-4 shadow-[4px_4px_0_0_rgba(0,0,0,1)] flex flex-col h-full`}>
+      <div className="flex items-center justify-between flex-1">
         <div>
           <p className="text-sm font-bold text-black">{title}</p>
           <p className={`text-xl font-bold mt-1`}>
@@ -39,7 +39,7 @@ export function StatCard({
           </p>
         </div>
         {icon && (
-          <div className={`p-2 border-2 border-black`}>
+          <div className={`p-2 border-2 border-black flex-shrink-0`}>
             {icon}
           </div>
         )}

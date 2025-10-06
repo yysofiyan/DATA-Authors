@@ -1,0 +1,115 @@
+{
+  "sintaID": "260194",
+  "name": "KARNA WIJAYA",
+  "photoUrl": "",
+  "affiliation": "Universitas Gadjah Mada",
+  "department": "S3 - Doktor Kimia",
+  "studyProgram": "S3 - Doktor Kimia",
+  "institutionName": "",
+  "institutionLocation": "",
+  "codePT": "",
+  "codeProdi": "",
+  "sintaScore": "10.58",
+  "sintaScoreOverall": 10.58,
+  "sintaScore3Years": "1.539",
+  "sintaScore3Yr": 1.539,
+  "affilScore": "10.58",
+  "affilScore3Years": "1.539",
+  "affilScore3Yr": 1.539,
+  "scopusMetrics": {
+    "articles": "220",
+    "citations": "1924",
+    "citedDocs": "186",
+    "hIndex": "23",
+    "i10Index": "70",
+    "gIndex": "1"
+  },
+  "gsMetrics": {
+    "articles": "461",
+    "citations": "3225",
+    "citedDocs": "302",
+    "hIndex": "28",
+    "i10Index": "101",
+    "gIndex": "1"
+  },
+  "wosMetrics": {
+    "articles": "149",
+    "citations": "1386",
+    "citedDocs": "133",
+    "hIndex": "19",
+    "i10Index": "53",
+    "gIndex": "2"
+  },
+  "publications": [
+    {
+      "title": "Introducing molybdenum onto activated Lapindo mud as a reusable green catalyst for sustainable bio-jet fuel production",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105013478755&origin=resultslist",
+      "journal_conference": "Materials Letters",
+      "year": 2026,
+      "cited": 0
+    },
+    {
+      "title": "Upcycling secondary nickel from spent nickel-manganese-cobalt (NMC) batteries as a nanocatalyst on sulfated natural zeolite for converting LDPE plastic waste into jet-fuel hydrocarbons",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014339035&origin=resultslist",
+      "journal_conference": "Next Materials",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Biogenic synthesis of silver nanoparticles/reduced graphene oxide (AgNPs/rGO) mediated Nephelium lappaceum leaf extract as an effective solid acid catalyst for liquid-phase benzene nitration",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85213830131&origin=resultslist",
+      "journal_conference": "Results in Chemistry",
+      "year": 2025,
+      "cited": 3
+    },
+    {
+      "title": "Unveiling the potency of graphene-based materials for water remediation: A brief review",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-86000719568&origin=resultslist",
+      "journal_conference": "Journal of Molecular Structure",
+      "year": 2025,
+      "cited": 1
+    },
+    {
+      "title": "Performance Comparison of Molybdenum-Impregnated Sulfated Mesoporous Silica Catalysts by Spray and Wet Impregnation in Transforming Used Palm Cooking Oil into Bio-Jet Fuel",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85219034962&origin=resultslist",
+      "journal_conference": "Chemistry Africa",
+      "year": 2025,
+      "cited": 2
+    },
+    {
+      "title": "Oxidative desulfurization of dibenzothiophene in model fuel using spray impregnated-biogenic silica-supported molybdenum oxide catalyst",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105015452026&origin=resultslist",
+      "journal_conference": "Vacuum",
+      "year": 2025,
+      "cited": 0
+    },
+    {
+      "title": "Synthesis of cobalt-dispersed sulfated zirconia nanocatalyst for the hydroconversion of used palm cooking oil into bio-jet fuel",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85211730258&origin=resultslist",
+      "journal_conference": "Case Studies in Chemical and Environmental Engineering",
+      "year": 2025,
+      "cited": 5
+    },
+    {
+      "title": "Exploring non-conventional techniques in biodiesel production: A brief review",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105008216924&origin=resultslist",
+      "journal_conference": "Molecular Catalysis",
+      "year": 2025,
+      "cited": 1
+    },
+    {
+      "title": "Environmental Impacts and the Food vs. Fuel Debate: A Critical Review of Palm Oil as Biodiesel",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105004797429&origin=resultslist",
+      "journal_conference": "Gcb Bioenergy",
+      "year": 2025,
+      "cited": 2
+    },
+    {
+      "title": "Toward Efficient Bio-jet Fuel Production via Atmospheric Hydrotreating: Insight into the Effect of Co/HZSM-5, Mo/HZSM-5, and CoMo/HZSM-5 Catalyst Arrangements",
+      "url": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105012874184&origin=resultslist",
+      "journal_conference": "Arabian Journal for Science and Engineering",
+      "year": 2025,
+      "cited": 0
+    }
+  ]
+}

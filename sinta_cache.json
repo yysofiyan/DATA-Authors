@@ -1,0 +1,1001 @@
+{
+  "42423": {
+    "nama": "ABDUL ROHMAN",
+    "photoUrl": "",
+    "afiliasi": "Universitas Gadjah Mada",
+    "department": "",
+    "program_studi": "S3 - Doktor Ilmu Farmasi",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "42423",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 17.643,
+      "sinta_3tahun": 2.326,
+      "afiliasi_total": 17.643,
+      "afiliasi_3tahun": 2.326
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 446,
+      "citations": 7405,
+      "citedDocs": 386,
+      "hIndex": 41,
+      "i10Index": 198,
+      "gIndex": 2
+    },
+    "gsMetrics": {
+      "articles": 2729,
+      "citations": 31450,
+      "citedDocs": 1703,
+      "hIndex": 75,
+      "i10Index": 639,
+      "gIndex": 8
+    },
+    "wosMetrics": {
+      "articles": 163,
+      "citations": 3629,
+      "citedDocs": 152,
+      "hIndex": 32,
+      "i10Index": 99,
+      "gIndex": 17
+    },
+    "publikasi": [
+      {
+        "judul": "Application of Vis/NIR and FTIR Spectroscopy combined with Chemometrics for the Authentication of Red fruit oil from Coconut oil",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105005553012&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Research Journal of Pharmacy and Technology",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Authentication of avocado oil mixed with cooking oils (branded and loose palm oil) utilizing fourier transform infrared spectroscopy in conjunction with chemometrics",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105010892268&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Measurement Food",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "The employment of FTIR-ATR spectroscopy and GC-MS combined with chemometrics for rapid detection of adulteration of pork oil in Gabus fish oil (Channa striata) for halal authentication",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105001347683&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Open Veterinary Journal",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Physicochemical characteristics and SPME-GC-MS based volatilomics for discrimination of beef and pork patties",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009495205&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Canrea Journal Food Technology Nutritions and Culinary Journal",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Standard Review of the application of molecular spectroscopic and chromatographic-based methods for determination of trans fatty acids in food products",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85212965110&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 2,
+        "jurnal": "Applied Food Research",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Chemometrics Assisted-Liquid Chromatography (LC)-Orbitrap High Resolution Mass Spectrometry (HRMS) Non-Targeted Metabolomics for Identification of Dog Meat in Beef Sausages",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105011985855&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Food Science of Animal Resources",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Chemometrics applications in omics studies (Metabolomics, Lipidomics, and Proteomics) for halal authentication in food and pharmaceutical products",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85217816615&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Applied Food Research",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Fingerprinting using vibrational spectroscopy and chemometrics for determining the presence of non-halal meats in food products",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105005758618&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Applied Food Research",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Advanced Mass Spectrometry for Dental Materials Integrated with Chromatography",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007966089&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Spectroscopic Tools and Techniques for Analysis of Dental Materials Current Trends",
+        "type": "no-Q as Book",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Untargeted fast proteomics analysis using UPLC-Orbitrap HRMS for halal authentication of meat and meat products",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85213054170&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Journal of Proteomics",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-09-28T19:16:52.044Z"
+  },
+  "42858": {
+    "nama": "ARIEF BUDIMAN",
+    "photoUrl": "",
+    "afiliasi": "Universitas Gadjah Mada",
+    "department": "",
+    "program_studi": "S2 - Magister Teknik Sistem",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "42858",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 6.493,
+      "sinta_3tahun": 1.346,
+      "afiliasi_total": 6.493,
+      "afiliasi_3tahun": 1.346
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 201,
+      "citations": 1975,
+      "citedDocs": 174,
+      "hIndex": 22,
+      "i10Index": 69,
+      "gIndex": 1
+    },
+    "gsMetrics": {
+      "articles": 394,
+      "citations": 3891,
+      "citedDocs": 271,
+      "hIndex": 32,
+      "i10Index": 112,
+      "gIndex": 1
+    },
+    "wosMetrics": {
+      "articles": 0,
+      "citations": 0,
+      "citedDocs": 0,
+      "hIndex": 0,
+      "i10Index": 0,
+      "gIndex": 0
+    },
+    "publikasi": [
+      {
+        "judul": "Production and Characterization of Bio-Briquettes Derived from Torrefied Cocoa Pod Husk and Durian Peel",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105002599402&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Natural and Life Sciences Communications",
+        "type": "Q4 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Fatty Acid Methyl Ester Production from Euglena gracilis through Mono and Multi-Light Spectrum Modification",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105002612493&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Natural and Life Sciences Communications",
+        "type": "Q4 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Synthesis of Polyesters from AB Tung Oil-based Polyol Monomers Through Step-growth Polymerization Reactions",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105006615780&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Bulletin of Chemical Reaction Engineering and Catalysis",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Phycocyanin ultrasound assisted extraction from Spirulina (Arthrospira platensis) using sodium phosphate buffer solvent: Mass transfer modelling and stability test",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105003410000&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "South African Journal of Chemical Engineering",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Microwave-Assisted Extraction of Polysaccharides from Chlorella pyrenoidosa and Its Characterization",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105007572225&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Indonesian Journal of Chemistry",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Catalytic Slow Pyrolysis of Rice Husk Pellets with Rice Husk Ash Catalyst Using Macro-TGA: Apparent Kinetics and Product Characterization",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85219575797&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Journal of Renewable Energy and Environment",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Impact of salt stress on the α-tocopherol, carotenoid derivatives and flocculation efficiency of Euglena sp., Indonesian Strain",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85199152499&origin=resultslist",
+        "tahun": 2024,
+        "sitasi": 0,
+        "jurnal": "Fisheries and Aquatic Sciences",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Optimation of the cell density, biomass production, lipid, and carbohydrate content of Nannochloropsis oculata with fluorescein and pH manipulation",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85193849275&origin=resultslist",
+        "tahun": 2024,
+        "sitasi": 0,
+        "jurnal": "Asia Pacific Journal of Molecular Biology and Biotechnology",
+        "type": "Q4 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Nitrogen Starvation for Increasing Lipid and Fatty Acid Methyl Ester on Euglena sp. Potential as Biojet Fuel",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85213336921&origin=resultslist",
+        "tahun": 2024,
+        "sitasi": 0,
+        "jurnal": "Chiang Mai Journal of Science",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Growth and Metabolite Enhancement of Acidophile Euglena sp. Isolated from Indonesia under Different Photoperiod Cycles",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85191941806&origin=resultslist",
+        "tahun": 2024,
+        "sitasi": 8,
+        "jurnal": "Jurnal Ilmiah Perikanan Dan Kelautan",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-09-28T19:23:20.072Z"
+  },
+  "260194": {
+    "nama": "KARNA WIJAYA",
+    "photoUrl": "",
+    "afiliasi": "Universitas Gadjah Mada",
+    "department": "",
+    "program_studi": "S3 - Doktor Kimia",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "260194",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 10.58,
+      "sinta_3tahun": 1.539,
+      "afiliasi_total": 10.58,
+      "afiliasi_3tahun": 1.539
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 220,
+      "citations": 1924,
+      "citedDocs": 186,
+      "hIndex": 23,
+      "i10Index": 70,
+      "gIndex": 1
+    },
+    "gsMetrics": {
+      "articles": 461,
+      "citations": 3225,
+      "citedDocs": 302,
+      "hIndex": 28,
+      "i10Index": 101,
+      "gIndex": 1
+    },
+    "wosMetrics": {
+      "articles": 149,
+      "citations": 1386,
+      "citedDocs": 133,
+      "hIndex": 19,
+      "i10Index": 53,
+      "gIndex": 2
+    },
+    "publikasi": [
+      {
+        "judul": "Introducing molybdenum onto activated Lapindo mud as a reusable green catalyst for sustainable bio-jet fuel production",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105013478755&origin=resultslist",
+        "tahun": 2026,
+        "sitasi": 0,
+        "jurnal": "Materials Letters",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Upcycling secondary nickel from spent nickel-manganese-cobalt (NMC) batteries as a nanocatalyst on sulfated natural zeolite for converting LDPE plastic waste into jet-fuel hydrocarbons",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014339035&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Next Materials",
+        "type": "no-Q as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Biogenic synthesis of silver nanoparticles/reduced graphene oxide (AgNPs/rGO) mediated Nephelium lappaceum leaf extract as an effective solid acid catalyst for liquid-phase benzene nitration",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85213830131&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 3,
+        "jurnal": "Results in Chemistry",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Unveiling the potency of graphene-based materials for water remediation: A brief review",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-86000719568&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Journal of Molecular Structure",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Performance Comparison of Molybdenum-Impregnated Sulfated Mesoporous Silica Catalysts by Spray and Wet Impregnation in Transforming Used Palm Cooking Oil into Bio-Jet Fuel",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85219034962&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 2,
+        "jurnal": "Chemistry Africa",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Oxidative desulfurization of dibenzothiophene in model fuel using spray impregnated-biogenic silica-supported molybdenum oxide catalyst",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105015452026&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Vacuum",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Synthesis of cobalt-dispersed sulfated zirconia nanocatalyst for the hydroconversion of used palm cooking oil into bio-jet fuel",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85211730258&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 5,
+        "jurnal": "Case Studies in Chemical and Environmental Engineering",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Exploring non-conventional techniques in biodiesel production: A brief review",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105008216924&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Molecular Catalysis",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Environmental Impacts and the Food vs. Fuel Debate: A Critical Review of Palm Oil as Biodiesel",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105004797429&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 2,
+        "jurnal": "Gcb Bioenergy",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Toward Efficient Bio-jet Fuel Production via Atmospheric Hydrotreating: Insight into the Effect of Co/HZSM-5, Mo/HZSM-5, and CoMo/HZSM-5 Catalyst Arrangements",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105012874184&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Arabian Journal for Science and Engineering",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-09-28T19:27:15.037Z"
+  },
+  "6016598": {
+    "nama": "HIMAWAN TRI BAYU MURTI PETRUS",
+    "photoUrl": "",
+    "afiliasi": "Universitas Gadjah Mada",
+    "department": "",
+    "program_studi": "S2 - Magister Teknik Kimia",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "6016598",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 7.407,
+      "sinta_3tahun": 1.859,
+      "afiliasi_total": 7.407,
+      "afiliasi_3tahun": 1.859
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 205,
+      "citations": 1399,
+      "citedDocs": 159,
+      "hIndex": 20,
+      "i10Index": 44,
+      "gIndex": 1
+    },
+    "gsMetrics": {
+      "articles": 320,
+      "citations": 2390,
+      "citedDocs": 225,
+      "hIndex": 25,
+      "i10Index": 70,
+      "gIndex": 2
+    },
+    "wosMetrics": {
+      "articles": 71,
+      "citations": 670,
+      "citedDocs": 68,
+      "hIndex": 15,
+      "i10Index": 22,
+      "gIndex": 4
+    },
+    "publikasi": [
+      {
+        "judul": "Polyethyleneimine-assisted polydopamine co-deposition for fabricating loose reverse osmosis membranes with enhanced antifouling and selectivity for lithium extraction from geothermal brine",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105012606144&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Journal of Water Process Engineering",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Controlled electrochemical synthesis of high-purity stannous sulphate (SnSO4) microparticles via Nafion 115-assisted membrane separation",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105015573182&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Sustainable Chemistry for Climate Action",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Understanding membrane fouling in pressure-driven and thermal-driven processes for brines applications: challenges, mechanisms, characterization, mitigation strategies, and future perspectives",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105002023880&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 2,
+        "jurnal": "Journal of Water Process Engineering",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Sustainable Lithium Recovery Using Li/Al LDHs Synthesized from Aluminium Multi-Layer Plastic Waste: A Resource Upcycling Approach",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105009543593&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Circular Economy and Sustainability",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "The Influence of Precursor to Activator Ratio and Curing Temperature on Geopolymer Paste with One-Part Method",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014103933&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Civil Engineering Journal Iran",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Characterization and Upgrading of Zircon Sand from Central Kalimantan Placer Gold Mine Tailings for Zirconia Production",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85217767463&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Mining, Metallurgy and Exploration",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Enhanced modified Magnetite Bentonite-CaO/FeCl3 from solid waste for highly efficient Methylene blue removal",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105004343875&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "Global Nest Journal",
+        "type": "Q3 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Controlled Particle Size Distribution in Ultrasound-Assisted Lithium Carbonate Precipitation",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105010710994&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "ACS Omega",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Graphene Oxide with Neodymium Oxide Composite Using Sonochemical Method as Electrode Material for Supercapacitor",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105014614187&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 0,
+        "jurnal": "JOM",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Valorization of Solid Residue from the Lateritic Nickel Ore Leaching Process for Ferronickel Production",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-105001083487&origin=resultslist",
+        "tahun": 2025,
+        "sitasi": 1,
+        "jurnal": "Waste and Biomass Valorization",
+        "type": "Q1 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-10-06T06:06:38.734Z"
+  },
+  "6081479": {
+    "nama": "MUHAMMAD AGREINDRA HELMIAWAN",
+    "photoUrl": "",
+    "afiliasi": "Universitas Sebelas April",
+    "department": "",
+    "program_studi": "S1 - Informatika",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "6081479",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 744,
+      "sinta_3tahun": 204,
+      "afiliasi_total": 744,
+      "afiliasi_3tahun": 204
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 10,
+      "citations": 51,
+      "citedDocs": 9,
+      "hIndex": 4,
+      "i10Index": 2,
+      "gIndex": 1
+    },
+    "gsMetrics": {
+      "articles": 60,
+      "citations": 381,
+      "citedDocs": 47,
+      "hIndex": 11,
+      "i10Index": 14,
+      "gIndex": 2
+    },
+    "wosMetrics": {
+      "articles": 0,
+      "citations": 0,
+      "citedDocs": 0,
+      "hIndex": 0,
+      "i10Index": 0,
+      "gIndex": 0
+    },
+    "publikasi": [
+      {
+        "judul": "Webqual Method on Online Course in Suburban Area: Post-Pandemic Study",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142915930&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 1,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Waste Classifier using Naive Bayes Algorithm",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 5,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Integrated Academic Information System Based on The Perception of Ease And Benefits",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142900282&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 0,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 3,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Experimental Evaluation of Security Monitoring and Notification on Network Intrusion Detection System for Server Security",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123247287&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 3,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Optimization Parameters Support Vector Regression using Grid Search Method",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123262739&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 12,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Examining readiness of e-learning implementation using Aydin and Tasci model: A rural university case study in Indonesia",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85103823359&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 7,
+        "jurnal": "Aip Conference Proceedings",
+        "type": "Q4 as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Analysis of Web Security Using Open Web Application Security Project 10",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098727365&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 13,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "A Model of Virtual Learning Environments Using Micro-Lecture, MOODLE, and SLOODLE",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098739091&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 3,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Analysis of Data Prediction Generate by Admission Student Application using Least Square Method",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098707941&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 4,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-10-06T06:07:04.805Z"
+  },
+  "6097073": {
+    "nama": "ESA FIRMANSYAH",
+    "photoUrl": "",
+    "afiliasi": "Universitas Sebelas April",
+    "department": "",
+    "program_studi": "S1 - Informatika",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "6097073",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 587,
+      "sinta_3tahun": 159,
+      "afiliasi_total": 587,
+      "afiliasi_3tahun": 159
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 16,
+      "citations": 62,
+      "citedDocs": 12,
+      "hIndex": 4,
+      "i10Index": 2,
+      "gIndex": 1
+    },
+    "gsMetrics": {
+      "articles": 62,
+      "citations": 358,
+      "citedDocs": 40,
+      "hIndex": 9,
+      "i10Index": 9,
+      "gIndex": 1
+    },
+    "wosMetrics": {
+      "articles": 4,
+      "citations": 2,
+      "citedDocs": 1,
+      "hIndex": 1,
+      "i10Index": 0,
+      "gIndex": 2
+    },
+    "publikasi": [
+      {
+        "judul": "Engaging Teens in History through a Mobile Game Utilizing the Fisher-Yates Shuffle Algorithm and Honeycomb UX Design",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85210801169&origin=resultslist",
+        "tahun": 2024,
+        "sitasi": 0,
+        "jurnal": "International Journal of Interactive Mobile Technologies",
+        "type": "Q2 as Journal",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Integrated Academic Information System Based on The Perception of Ease And Benefits",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142900282&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 0,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Tracer Study Information Systems Success in Private Higher Education Institution",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142910306&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 1,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Enhancing the Usability of Information Systems Internal Quality Assurance Systems: Recently Formed Universities Study",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142880845&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 2,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 3,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "The K-Nearest Neighbor Algorithm for the Classification of Internet Users in Rural Campus",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123248997&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 0,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Information System Project Success based on User Experience at the Village Administration Office",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123254081&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 1,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Examining readiness of e-learning implementation using Aydin and Tasci model: A rural university case study in Indonesia",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85103823359&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 7,
+        "jurnal": "Aip Conference Proceedings",
+        "type": "Q4 as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Acceptance of Ubiquitous Registration Information Systems",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098710276&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 2,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Analysis of Web Security Using Open Web Application Security Project 10",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098727365&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 13,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-10-06T06:09:44.064Z"
+  },
+  "6655767": {
+    "nama": "YAN YAN SOFIYAN",
+    "photoUrl": "",
+    "afiliasi": "Universitas Sebelas April",
+    "department": "",
+    "program_studi": "S1 - Sistem Informasi",
+    "institutionName": "",
+    "institutionLocation": "",
+    "codePT": "",
+    "codeProdi": "",
+    "sinta_id": "6655767",
+    "bidang_keahlian": [],
+    "skor": {
+      "sinta_total": 279,
+      "sinta_3tahun": 63,
+      "afiliasi_total": 279,
+      "afiliasi_3tahun": 63
+    },
+    "penelitian": [],
+    "scopusMetrics": {
+      "articles": 5,
+      "citations": 32,
+      "citedDocs": 4,
+      "hIndex": 3,
+      "i10Index": 2,
+      "gIndex": 5
+    },
+    "gsMetrics": {
+      "articles": 35,
+      "citations": 136,
+      "citedDocs": 13,
+      "hIndex": 7,
+      "i10Index": 5,
+      "gIndex": 1
+    },
+    "wosMetrics": {
+      "articles": 0,
+      "citations": 0,
+      "citedDocs": 0,
+      "hIndex": 0,
+      "i10Index": 0,
+      "gIndex": 0
+    },
+    "publikasi": [
+      {
+        "judul": "Waste Classifier using Naive Bayes Algorithm",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85142876992&origin=resultslist",
+        "tahun": 2022,
+        "sitasi": 5,
+        "jurnal": "2022 10th International Conference on Cyber and IT Service Management Citsm 2022",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Microservices Technology on the Development of the Massive Open Online Course in Higher Educations",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123239934&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 0,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Security Model using Intrusion Detection System on Cloud Computing Security Management",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123246304&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 3,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Optimization Parameters Support Vector Regression using Grid Search Method",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85123262739&origin=resultslist",
+        "tahun": 2021,
+        "sitasi": 12,
+        "jurnal": "2021 9th International Conference on Cyber and IT Service Management Citsm 2021",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Analysis of Web Security Using Open Web Application Security Project 10",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098727365&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 13,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "A Model of Virtual Learning Environments Using Micro-Lecture, MOODLE, and SLOODLE",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098739091&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 3,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management Citsm 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      },
+      {
+        "judul": "Artificial Intelligence in the Game to Respond Emotion Using Fuzzy Text and Logic",
+        "link": "https://www.scopus.com/record/display.uri?eid=2-s2.0-85098716402&origin=resultslist",
+        "tahun": 2020,
+        "sitasi": 0,
+        "jurnal": "2020 8th International Conference on Cyber and IT Service Management, CITSM 2020",
+        "type": "no-Q as Conference Proceedin",
+        "authorOrder": "",
+        "creator": ""
+      }
+    ],
+    "_cachedAt": "2025-09-28T20:02:21.327Z"
+  }
+}

@@ -23,10 +23,10 @@ export function PublicationCard({ publication }: PublicationCardProps) {
             )}
             
             {publication.creator && (
-              <div className="flex items-center gap-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <p className="text-sm font-bold text-black">Author: {publication.creator}</p>
                 {publication.authorOrder && (
-                  <span className="inline-flex items-center px-2 py-0.5 border-2 border-black text-xs font-bold bg-white text-black">
+                  <span className="inline-flex items-center px-2 py-0.5 border-2 border-black text-xs font-bold bg-white text-black flex-shrink-0">
                     {publication.authorOrder}
                   </span>
                 )}
@@ -36,13 +36,13 @@ export function PublicationCard({ publication }: PublicationCardProps) {
             <div className="flex flex-wrap items-center gap-4 mt-3">
               {publication.year && (
                 <div className="flex items-center gap-1.5">
-                  <Calendar className="w-4 h-4 text-black" />
+                  <Calendar className="w-4 h-4 text-black flex-shrink-0" />
                   <span className="text-sm font-bold">{publication.year}</span>
                 </div>
               )}
               {publication.cited !== undefined && publication.cited > 0 && (
                 <div className="flex items-center gap-1.5">
-                  <Quote className="w-4 h-4 text-black" />
+                  <Quote className="w-4 h-4 text-black flex-shrink-0" />
                   <span className="text-sm font-bold">{publication.cited} citations</span>
                 </div>
               )}
@@ -53,7 +53,7 @@ export function PublicationCard({ publication }: PublicationCardProps) {
                   rel="noopener noreferrer" 
                   className="inline-flex items-center gap-1.5 text-black hover:text-blue-700 text-sm font-bold transition-colors border-b-2 border-black"
                 >
-                  <LinkIcon className="w-4 h-4" />
+                  <LinkIcon className="w-4 h-4 flex-shrink-0" />
                   <span>View Publication</span>
                 </a>
               )}
